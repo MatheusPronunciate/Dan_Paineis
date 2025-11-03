@@ -1,0 +1,107 @@
+/* src/pages/Contato.css */
+.contact-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* 2 colunas */
+  gap: 3rem;
+}
+
+/* Empilha as colunas em telas menores */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.contact-info p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Estilos do Formulário */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.submit-button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 28px;
+  background-color: #f7941d; /* Laranja DanPainéis */
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e68a1a;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.feedback-success {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.feedback-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}

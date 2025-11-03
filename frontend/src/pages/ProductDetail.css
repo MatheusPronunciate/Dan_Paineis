@@ -1,0 +1,76 @@
+/* src/pages/ProductDetail.css */
+.product-detail-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.product-detail-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.product-detail-header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .product-detail-layout {
+    grid-template-columns: 1fr; /* Colunas empilhadas */
+  }
+}
+
+.product-detail-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-detail-info h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.product-detail-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.quote-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #f7941d; /* Laranja DanPainéis */
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.quote-button:hover {
+  background-color: #e68a1a;
+}

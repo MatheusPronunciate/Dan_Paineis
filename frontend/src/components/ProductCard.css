@@ -1,0 +1,46 @@
+/* src/components/ProductCard.css */
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 200px; /* Altura fixa para a imagem */
+  overflow: hidden;
+}
+
+.product-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.product-card-content {
+  padding: 1rem;
+}
+
+.product-card-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  min-height: 40px; /* Evita que os cards fiquem desalinhados */
+}
+
+.product-card-content p {
+  color: #007bff;
+  font-weight: bold;
+  margin: 0;
+}

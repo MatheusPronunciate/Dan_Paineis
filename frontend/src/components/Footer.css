@@ -1,0 +1,70 @@
+/* src/components/Footer.css */
+.footer-container {
+  background-color: #f7941d; /* Cor laranja do site original */
+  color: #333; /* Vamos usar uma cor escura para o texto sobre o laranja */
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 5px solid #333; /* Uma borda para destacar */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin: 1rem;
+}
+
+.footer-info h4,
+.footer-links h4,
+.footer-social h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Empilha as colunas */
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center;
+  }
+
+  .footer-info,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;
+    margin: 1rem 0;
+  }
+}

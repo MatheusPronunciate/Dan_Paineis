@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": "1",
+    "slug": "armario-porta-vidro",
+    "name": "ARMÁRIOS C/ PORTAS DE VIDRO",
+    "description": "...",
+    "imageUrl": "https://i.imgur.com/example1.jpg", 
+    "featured": true 
+  },
+  {
+    "id": "2",
+    "slug": "monopaineis-sobr",
+    "name": "MONOPAINÉIS DE SOBR.",
+    "description": "...",
+    "imageUrl": "https://i.imgur.com/example2.jpg",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "slug": "qgbt-multi-incendio",
+    "name": "QGBT - MULTI INCÊNDIOS",
+    "description": "...",
+    "imageUrl": "https://i.imgur.com/example3.jpg",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "slug": "quadro-de-comando-agua",
+    "name": "QUADRO DE COMANDO ÁGUA",
+    "description": "...",
+    "imageUrl": "https://i.imgur.com/example4.jpg",
+    "featured": false 
+  }
+]
