@@ -15,8 +15,8 @@ function Navbar() {
       <div className="container navbar-inner-container">
       <div className="navbar-logo">
         <Link to="/" onClick={() => setMenuAberto(false)}>
-          {/* <img src={logo} alt="DanPainéis Logo" /> */}
-          <strong>DanPainéis</strong>
+          <img src={logo} alt="DanPainéis Logo" />
+          {/* <strong>DanPainéis</strong> */}
         </Link>
       </div>
 

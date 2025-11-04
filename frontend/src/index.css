@@ -1,8 +1,13 @@
-:root {
+#root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
+  min-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -24,11 +29,21 @@ a:hover {
 }
 
 body {
+  width: 100%;
+  padding: 0; 
   margin: 0;
+  height: 100%;
   display: flex;
   place-items: center;
+  box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
+}
+
+
+/* Herda o box-sizing para todos os elementos */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 h1 {
@@ -85,11 +100,5 @@ button:focus-visible {
 .main-container {
   padding-top: 2rem;    /* Espaço do topo */
   padding-bottom: 2rem; /* Espaço de baixo */
-  min-height: 80vh;
-  /* REMOVA:
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 2rem 1.5rem;
-     (Vamos mover isso para dentro das páginas)
-  */
+  flex-grow: 1;
 }
