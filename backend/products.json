@@ -2,34 +2,34 @@
 [
   {
     "id": "1",
-    "slug": "armario-porta-vidro",
-    "name": "ARMÁRIOS C/ PORTAS DE VIDRO",
-    "description": "Armários com portas de vidro temperado, oferecendo segurança e elegância.",
+    "slug": "quadro-de-comando",
+    "name": "Quadro de Comando",
+    "description": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente. Identificação externa são feitas com plaquetas em acrílico. Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente. Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos. Projeto em Auto Cad.",
     "imageUrl": "https://www.danpaineis.com.br/imagens/informacoes/fabricante-paineis-eletricos-01.webp", 
     "featured": true 
   },
   {
     "id": "2",
-    "slug": "monopaineis-sobr",
-    "name": "MONOPAINÉIS DE SOBR.",
-    "description": "...",
-    "imageUrl": "https://i.imgur.com/example2.jpg",
+    "slug": "quadro-geral-baixa-tensao",
+    "name": "Quadro Geral Baixa Tensão",
+    "description": "Dimensionamento do armário ou caixa e projeto do QGBT conforme necessidades do cliente.\nBarramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808.\nBarramentos de entrada para facilitar a ligação dos cabos.\nTodas partes vivas do QGBT são protegidas por acrílico ou policarbonato transparente.\nAs partes metálicas onde passa barramento são protegidas com fenolita.\nIdentificação externa e interna feita com plaquetas em acrílico.\nTodos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente.",  
+    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-02-01.webp",
     "featured": true
   },
   {
     "id": "3",
-    "slug": "qgbt-multi-incendio",
-    "name": "QGBT - MULTI INCÊNDIOS",
+    "slug": "quadro-de-distribuicao-estabilizado-ou-no-break",
+    "name": "Quadro de Distribuição Estabilizado ou No Break",
     "description": "...",
-    "imageUrl": "https://i.imgur.com/example3.jpg",
+    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-03-01.webp",
     "featured": true
   },
   {
     "id": "4",
-    "slug": "quadro-de-comando-agua",
-    "name": "QUADRO DE COMANDO ÁGUA",
+    "slug": "quadro-de-distribuicao",
+    "name": "Quadro de Distribuição",
     "description": "...",
-    "imageUrl": "https://i.imgur.com/example4.jpg",
+    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-04-01.webp",
     "featured": false 
   }
 ]

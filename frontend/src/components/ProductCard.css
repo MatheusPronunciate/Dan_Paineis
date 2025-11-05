@@ -32,7 +32,7 @@
 
 .product-card-content {
   padding: 1rem;
-  background-color: var(--cor-fundo-navbar);
+  
 }
 
 .product-card-content h4 {
@@ -41,6 +41,7 @@
   min-height: 40px;
   
   /* 2. Garante que o texto do título use a variável de texto */
+  /* background-color: var(--cor-fundo-navbar); REMOVIDO: Não precisa de background-color no h4 */
   color: var(--cor-texto);
 }
 
