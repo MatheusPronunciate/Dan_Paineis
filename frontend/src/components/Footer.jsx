@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright © DanPainéis. Desenvolvido por [Seu Nome/Sua Empresa]</p>
+        <p>Copyright © DanPainéis. Desenvolvido por Matheus Pronunciate</p>
         {/* Você pode remover esses links W3C, eles são de validação antiga */}
       </div>
       
