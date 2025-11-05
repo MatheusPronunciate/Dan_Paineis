@@ -8,15 +8,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --cor-fundo: #ffffff;          /* Fundo principal (branco) */
+  --cor-texto: #333333;          /* Texto principal (preto/cinza) */
+  --cor-borda: #e0e0e0;         /* Borda do Navbar, cards, etc. */
+  --cor-fundo-navbar: #ffffff;   /* Fundo do Navbar (pode ser = --cor-fundo) */
+
+  /* Cores da Marca (Laranja) */
+  --cor-primaria: #f7941d;
+  --cor-primaria-hover: #e68a1a;
+  --cor-primaria-texto: #333333;   /* Texto em cima do botão laranja */
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #1a1a1a;          /* Fundo escuro (o que você tem agora) */
+    --cor-texto: #e0e0e0;          /* Texto claro */
+    --cor-borda: #333333;         /* Bordas mais escuras */
+    --cor-fundo-navbar: #242424;   /* Fundo do Navbar um pouco diferente */
+  }
 }
 
 a {
@@ -38,6 +58,9 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
+
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 
 
@@ -98,7 +121,6 @@ button:focus-visible {
 
 
 .main-container {
-  padding-top: 2rem;    /* Espaço do topo */
   padding-bottom: 2rem; /* Espaço de baixo */
   flex-grow: 1;
 }

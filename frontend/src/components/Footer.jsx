@@ -1,6 +1,8 @@
 // src/components/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Example: Importing specific brand icons
 import './Footer.css'; // Vamos criar este arquivo de CSS
 
 function Footer() {
@@ -24,9 +26,17 @@ function Footer() {
         </div>
         <div className="footer-social">
           <h4>Redes</h4>
-          {/* Adicione links para redes sociais se houver */}
+          
           <p>Siga-nos!</p>
-          {/* Ex: <a href="..." target="_blank">Instagram</a> */}
+          <div className="social-icons">
+           
+<a href="https://www.instagram.com/danpaineis/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faInstagram} size="lg" />
+</a>
+<a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+</a>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">

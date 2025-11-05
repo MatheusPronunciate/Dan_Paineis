@@ -3,18 +3,21 @@
 /* 1. Hero Section */
 .hero-section {
   position: relative;
-  height: 50vh; /* 50% da altura da tela */
+  height: 50vh;
   min-height: 400px;
   background-size: cover;
   background-position: center;
+  color: white;
+  
+  /* Mantém o display:flex para centralizar verticalmente */
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+
+  /* REMOVA: justify-content: flex-end; */
+  /* REMOVA: text-align: center; */
 }
 
-/* Overlay escuro para legibilidade */
+/* Overlay (está correto) */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -26,9 +29,15 @@
 }
 
 .hero-content {
-  position: relative; /* Para ficar acima do overlay */
+  position: relative;
   z-index: 2;
   max-width: 600px;
+  text-align: right; /* Mantém - alinha o H1, P, e Botão */
+  
+  /* ESTA É A MÁGICA: */
+  /* Empurra o bloco de 600px para a direita do container pai */
+  margin-left: auto; 
+  margin-right: 0; /* Garante o alinhamento à direita */
 }
 
 .hero-content h1 {
@@ -39,8 +48,8 @@
 .hero-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #f7941d; /* Laranja */
-  color: #333;
+  background-color: var(--cor-primaria);
+  color: var(--cor-primaria-texto);
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -49,7 +58,7 @@
 }
 
 .hero-button:hover {
-  background-color: #e68a1a;
+  background-color: var(--cor-primaria-hover);
 }
 
 /* 2. About Section */
@@ -72,4 +81,3 @@
   margin-bottom: 2rem;
   font-size: 2rem;
 }
-

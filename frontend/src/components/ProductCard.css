@@ -1,10 +1,11 @@
-/* src/components/ProductCard.css */
 .product-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
+  border: 1px solid var(--cor-borda); /* Usa a variável de borda */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* 1. Usa a variável de fundo (que será branca no modo claro, escura no modo escuro) */
+  background-color: var(--cor-fundo);
 }
 
 .product-card:hover {
@@ -31,16 +32,21 @@
 
 .product-card-content {
   padding: 1rem;
+  background-color: var(--cor-fundo-navbar);
 }
 
 .product-card-content h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  min-height: 40px; /* Evita que os cards fiquem desalinhados */
+  min-height: 40px;
+  
+  /* 2. Garante que o texto do título use a variável de texto */
+  color: var(--cor-texto);
 }
 
 .product-card-content p {
-  color: #007bff;
+  /* 3. O link "Saiba mais" deve usar sua cor primária */
+  color: var(--cor-primaria); 
   font-weight: bold;
   margin: 0;
 }

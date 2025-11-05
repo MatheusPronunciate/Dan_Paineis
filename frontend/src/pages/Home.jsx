@@ -1,8 +1,10 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Importe o Link
 import ProductCard from '../components/ProductCard'; // Importe seu card
 import './Home.css'; // CSS para a Home
+import heroBackground from '../assets/fundo_tec.jpg'; // Importe a imagem
 
 function Home() {
   // Estado para guardar os produtos e para controle de loading/erro
@@ -14,7 +16,7 @@ function Home() {
     // Função para buscar os dados
     const fetchFeaturedProducts = async () => {
       try {
-        // Use a URL do seu backend (não esqueça do http://)
+        
         const response = await axios.get('https://danpaineis-api.onrender.com/api/products/featured');
         setFeaturedProducts(response.data);
       } catch (err) {
@@ -32,12 +34,12 @@ function Home() {
   <>
 
       {/* 1. Seção Hero (Banner) */}
-      <section className="hero-section" style={{ backgroundImage: `url('https://i.imgur.com/link-para-banner.jpg')` }}>
+      <section className="hero-section" style={{ backgroundImage: `url(${heroBackground})` }}>
         <div className="container">
           <div className="hero-content">
             <h1>Referência em segurança</h1>
             <p>Com profissionais altamente capacitados para atender às suas necessidades.</p>
-            <a href="/contato" className="hero-button">Conheça nossa empresa</a>
+            <Link to="/empresa" className="hero-button">Conheça nossa empresa</Link>
           </div>
         </div>  
       </section>
