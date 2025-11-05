@@ -9,6 +9,11 @@ const products = require('./products.json');
 app.use(cors());
 app.use(express.json());
 
+const allowedOrigins = [
+  'http://localhost:5173', // Para você testar local
+  'https://matheuspronunciate.github.io/Dan_Paineis/' 
+];
+
 // Rota: Todos os produtos
 app.get('/api/products', (req, res) => {
   res.json(products);
