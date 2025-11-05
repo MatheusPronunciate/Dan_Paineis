@@ -17,7 +17,7 @@ function ProductDetail() {
       setIsLoading(true);
       try {
         // 2. Faz a chamada de API usando o slug
-        const response = await axios.get(`http://localhost:3001/api/products/${slug}`);
+        const response = await axios.get(`https://danpaineis-api.onrender.com/api/products/${slug}`);
         setProduct(response.data);
       } catch (err) {
         console.error(`Erro ao buscar produto ${slug}:`, err);

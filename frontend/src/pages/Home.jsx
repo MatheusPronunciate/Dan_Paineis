@@ -15,7 +15,7 @@ function Home() {
     const fetchFeaturedProducts = async () => {
       try {
         // Use a URL do seu backend (não esqueça do http://)
-        const response = await axios.get('http://localhost:3001/api/products/featured');
+        const response = await axios.get('https://danpaineis-api.onrender.com/api/products/featured');
         setFeaturedProducts(response.data);
       } catch (err) {
         console.error("Erro ao buscar produtos:", err);

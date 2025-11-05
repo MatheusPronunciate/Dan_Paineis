@@ -35,7 +35,7 @@ function Contato() {
 
     try {
       // Faz a requisição POST para o backend
-      const response = await axios.post('http://localhost:3001/api/contact', formData);
+      const response = await axios.post('https://danpaineis-api.onrender.com/api/contact', formData);
 
       setSubmitStatus('success'); // Sucesso!
       console.log(response.data.message); // Ex: "Mensagem recebida..."

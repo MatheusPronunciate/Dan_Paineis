@@ -14,7 +14,7 @@ function ProductList() {
       setIsLoading(true);
       try {
         // A mágica está aqui: buscamos a rota principal '/api/products'
-        const response = await axios.get('http://localhost:3001/api/products');
+        const response = await axios.get('https://danpaineis-api.onrender.com/api/products');
         setProducts(response.data);
       } catch (err) {
         console.error("Erro ao buscar todos os produtos:", err);
