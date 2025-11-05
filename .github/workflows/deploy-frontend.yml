@@ -1,0 +1,61 @@
+# Workflow para fazer build e deploy do site React (Vite) no GitHub Pages
+
+name: Deploy Frontend para GitHub Pages
+
+on:
+  # Roda toda vez que você der 'push' para o branch 'main'
+  push:
+    branches: [ "main" ] # Mude para 'master' se for o seu caso
+
+  # Permite rodar este workflow manualmente pela aba "Actions"
+  workflow_dispatch:
+
+# Define o diretório de trabalho padrão para os jobs
+defaults:
+  run:
+    working-directory: ./frontend # 👈 IMPORTANTE! Diz para rodar no seu subdiretório
+
+# Permissões necessárias para o deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # Job 1: Fazer o "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Checkout do código
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Pode mudar para 20 se preferir
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json # 👈 Caminho correto
+
+      - name: 3. Instalar dependências
+        run: npm install
+
+      - name: 4. Fazer o Build (Vite)
+        run: npm run build # Isso vai criar a pasta 'dist' dentro de 'frontend'
+
+      - name: 5. Preparar artefato para deploy
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Sobe o conteúdo da pasta de build
+          path: ./frontend/dist # 👈 Caminho completo para a pasta 'dist'
+
+  # Job 2: Fazer o "deploy"
+  deploy:
+    needs: build # Este job só roda depois que o job 'build' terminar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy para GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
