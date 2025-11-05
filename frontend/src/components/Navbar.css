@@ -90,7 +90,7 @@
     position: absolute;
     top: 100%; /* Começa logo abaixo do navbar */
     left: 0;
-    background-color: white;
+    background-color: var(--cor-fundo-navbar);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-top: 1px solid #eee;
 

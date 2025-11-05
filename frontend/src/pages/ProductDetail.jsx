@@ -1,6 +1,8 @@
 // src/pages/ProductDetail.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'; // Importe o useParams e Link
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import axios from 'axios';
 import './ProductDetail.css'; // CSS para os detalhes
 
@@ -10,6 +12,7 @@ function ProductDetail() {
 
   const [product, setProduct] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isOpen, setIsOpen] = useState(false); // Estado para controlar o Lightbox
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -59,7 +62,20 @@ function ProductDetail() {
 
       <div className="product-detail-layout">
         <div className="product-detail-image">
-          <img src={product.imageUrl} alt={product.name} />
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            onClick={() => setIsOpen(true)} // Abre o Lightbox ao clicar
+            style={{ cursor: 'pointer' }} // Indica que é clicável
+          />
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={[
+              { src: product.imageUrl },
+            ]}
+          />
+
         </div>
         <div className="product-detail-info">
           <h3>Descrição do Produto</h3>

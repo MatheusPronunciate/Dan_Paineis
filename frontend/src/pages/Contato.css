@@ -30,7 +30,7 @@
 .contact-info h3 {
   font-size: 1.5rem;
   margin-top: 0;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--cor-borda);
   padding-bottom: 0.5rem;
 }
 
@@ -48,7 +48,7 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #333;
+  color: var(--cor-texto);
 }
 
 .form-group input,

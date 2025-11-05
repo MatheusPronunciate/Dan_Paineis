@@ -6,14 +6,14 @@
 }
 
 .product-detail-header {
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--cor-borda);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
 .back-link {
   text-decoration: none;
-  color: #007bff;
+  color: var(--cor-primaria);
   font-weight: 500;
   display: inline-block;
   margin-bottom: 1rem;
@@ -30,7 +30,7 @@
 
 .product-detail-layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 3rem;
 }
 
@@ -41,9 +41,19 @@
   }
 }
 
+.product-detail-image {
+  /* Damos uma altura fixa ou máxima */
+  /* Vamos usar 400px como exemplo. */
+  height: 400px; 
+  overflow: hidden; /* Esconde o que transbordar */
+  border-radius: 8px; /* Mova o border-radius para o contêiner */
+}
+
 .product-detail-image img {
   width: 100%;
-  border-radius: 8px;
+  height: 100%; /* Faz a imagem ter 100% da altura do PAI (400px) */
+  object-fit: cover; 
+  display: block;  /* Remove qualquer espaçamento extra de 'inline' */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -55,7 +65,6 @@
 .product-detail-info p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #333;
 }
 
 .quote-button {
