@@ -48,13 +48,15 @@ function Home() {
       <div className="container">
       <section className="about-section">
         <h2>DanPainéis - Montagem e Comércio de Painéis Ltda</h2>
-        <p>Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e histório da empresa.
+        <div><p>Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa. <br>
+        </br>
 
-Nossa empresa está no mercado há mais de dezoito anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+Nossa empresa está no mercado há mais de dezoito anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.<br></br>
 
-Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.
+Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.<br></br>
 
-Este site visa oferecer também formas de contato eficientes para que possamos estabelecer uma comunicação eficiente e rápida entre a empresa e os clientes.</p>
+
+Este site visa oferecer também formas de contato eficientes para que possamos estabelecer uma comunicação eficiente e rápida entre a empresa e os clientes.<br></br></p></div>
         {/* Adicione o resto do texto e o botão "Saiba mais" */}
       </section>
 
