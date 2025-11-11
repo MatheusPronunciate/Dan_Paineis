@@ -1,22 +1,28 @@
 /* src/components/Navbar.css */
 .navbar-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: relative; /* Necessário para o menu mobile */
-
-  background-color: var(--cor-fundo-navbar); 
-  border-bottom: 1px solid var(--cor-borda); 
+  background-color: var(--cor-fundo-navbar); /* Fundo Azul Escuro */
+  color: var(--cor-texto-navbar);           /* Texto Branco */
+  
+  /* Fixa o Navbar no topo */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+  /* Sombra sutil (opcional, mas bom) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-logo a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: var(--cor-texto-navbar);
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem; /* 28px */
+}
+
+.navbar-logo .highlight {
+  color: var(--cor-highlight); /* Amarelo/Dourado */
 }
 
 .navbar-links {
@@ -24,31 +30,46 @@
 }
 
 .navbar-inner-container {
-  display: flex;
+display: flex;
   justify-content: space-between;
   align-items: center;
-  /* O padding agora vem da classe .container (do index.css)
-     mas o padding vertical é específico daqui:
-  */
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .navbar-links a {
-  margin-left: 1.5rem;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 1rem; /* 16px */
+  color: var(--cor-texto-navbar);
   text-decoration: none;
-  color: #555;
-  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
+  padding-bottom: 0.5rem; /* Espaço para o sublinhado */
+  position: relative; /* Para o sublinhado */
   transition: color 0.3s ease;
 }
 
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; /* Começa com 0 */
+  height: 2px;
+  background-color: var(--cor-highlight);
+  transition: width 0.3s ease-in-out;
+}
+
 .navbar-links a:hover {
-  color: #007bff;
+  color: var(--cor-highlight); /* O texto fica amarelo */
 }
 
 .navbar-contact-desktop {
-  font-weight: bold;
-  color: #333;
+  font-weight: 600;
+  color: var(--cor-texto-navbar);
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navbar-contact-mobile {
@@ -71,7 +92,7 @@
 .navbar-toggle .bar {
   width: 100%;
   height: 3px;
-  background-color: #333; /* Cor das barras */
+  background-color: var(--cor-texto-navbar); /* BRANCO */
   border-radius: 2px;
 }
 
@@ -84,17 +105,16 @@
 
   /* Esconde os links do desktop */
   .navbar-links {
-    display: none; /* Escondido por padrão */
+    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100%; /* Começa logo abaixo do navbar */
+    top: 100%; /* Gruda abaixo do header */
     left: 0;
-    background-color: var(--cor-fundo-navbar);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-top: 1px solid #eee;
-
-    z-index: 100;
+    background-color: var(--cor-fundo-navbar); /* Fundo azul */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 999; /* Garante que fique na frente (z-index do header é 1000) */
   }
 
   /* Mostra o menu quando 'open' está ativo */
@@ -104,10 +124,22 @@
 
   .navbar-links a {
     margin: 0;
-    padding: 1rem 2rem; /* Espaçamento de clique */
+    padding: 1rem 1.5rem; /* Espaçamento de clique */
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-links a:hover,
+  .navbar-links a:hover::after {
+    /* Remove o efeito de sublinhado no mobile */
+    width: auto;
+    color: var(--cor-highlight);
+  }
+
+  /* Mostra o botão hambúrguer */
+  .navbar-toggle {
+    display: flex;
   }
 
   /* Esconde o contato do desktop */
@@ -118,9 +150,8 @@
   /* Mostra o contato dentro do menu mobile */
   .navbar-contact-mobile {
     display: block;
-    padding: 1rem 2rem;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-  }
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: var(--cor-highlight);
+  } 
 }

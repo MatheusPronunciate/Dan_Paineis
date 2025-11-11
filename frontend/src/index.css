@@ -14,18 +14,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --cor-fundo: #ffffff;          /* Fundo principal (branco) */
-  --cor-texto: #333333;          /* Texto principal (preto/cinza) */
-  --cor-borda: #e0e0e0;         /* Borda do Navbar, cards, etc. */
-  --cor-fundo-navbar: #ffffff;   /* Fundo do Navbar (pode ser = --cor-fundo) */
-
-  /* Cores da Marca (Laranja) */
-  --cor-primaria: #f7941d;
-  --cor-primaria-hover: #e68a1a;
-  --cor-primaria-texto: #333333;   /* Texto em cima do botão laranja */
 }
 
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #333333;
+  --cor-borda: #e0e0e0;
+  --cor-texto-card: #ffffff;
 
+
+  /* NOVA VARIÁVEL (Branco no modo claro) */
+  --cor-fundo-card: #ffffff;
+  
+  /* --cor-fundo-navbar: #ffffff; */
+
+  /* CORES DA MARCA (LARANJA) */
+  --cor-primaria: #f7941d;
+  --cor-primaria-hover: #e68a1a;
+  --cor-primaria-texto: #333333;
+
+  /* NOVAS CORES (DO AXIAL) */
+  --cor-fundo-navbar: #001f3f;    /* Azul Escuro */
+  --cor-texto-navbar: #ffffff;     /* Branco */
+  --cor-highlight: #ffc631;       /* Amarelo/Dourado */
+}
   
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +46,10 @@
     --cor-texto: #e0e0e0;          /* Texto claro */
     --cor-borda: #333333;         /* Bordas mais escuras */
     --cor-fundo-navbar: #242424;   /* Fundo do Navbar um pouco diferente */
+    --cor-texto-card: #ffffff;    /* Texto do card claro */
+
+    /* NOVA VARIÁVEL (Cinza escuro no modo escuro) */
+    --cor-fundo-card: #242424;
   }
 }
 

@@ -1,68 +1,128 @@
 /* src/components/Footer.css */
+
+/* --- Contêiner Principal --- */
 .footer-container {
-  background-color: #f7941d; /* Cor laranja do site original */
-  color: #333; /* Vamos usar uma cor escura para o texto sobre o laranja */
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: 5px solid #333; /* Uma borda para destacar */
+  background-color: var(--cor-fundo-navbar); /* Fundo Azul Escuro */
+  color: var(--cor-texto-navbar);           /* Texto Branco */
+  padding-top: 4rem;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-bottom: 2rem;
+/* --- Layout Principal do Footer --- */
+.footer-main {
+  display: grid;
+  /* Cria 4 colunas em desktop */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem; /* Espaçamento entre as colunas */
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-info,
-.footer-links,
-.footer-social {
-  flex: 1;
-  min-width: 250px;
-  margin: 1rem;
+.footer-block .footer-title {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem; /* 20px */
+  color: var(--cor-texto-navbar);
+  margin-bottom: 1.5rem;
 }
 
-.footer-info h4,
-.footer-links h4,
-.footer-social h4 {
-  margin-top: 0;
+/* --- Bloco 1: Logo --- */
+.footer-logo {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--cor-texto-navbar);
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem; /* 28px */
   margin-bottom: 1rem;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.5rem;
 }
 
-.footer-info p {
-  margin: 0.5rem 0;
+.footer-logo .highlight {
+  color: var(--cor-highlight); /* Dourado */
+}
+
+.footer-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7); /* Branco com transparência */
+  margin: 0;
+}
+
+/* --- Bloco 2: Links de Navegação --- */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
 }
 
 .footer-links a {
-  display: block;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  color: #333;
-  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  color: var(--cor-highlight);
+  padding-left: 5px;
 }
 
-.footer-bottom {
+/* --- Bloco 3: Contatos --- */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-contact li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Bloco 4: Redes Sociais --- */
+.footer-socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--cor-texto-navbar);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: var(--cor-highlight);
+  color: var(--cor-fundo-navbar);
+  transform: scale(1.1);
+}
+
+
+
+
+/* --- Rodapé Secundário (Copyright) --- */
+.footer-secondary {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 2rem 0;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column; /* Empilha as colunas */
-    align-items: center; /* Centraliza o conteúdo */
-    text-align: center;
-  }
-
-  .footer-info,
-  .footer-links,
-  .footer-social {
-    min-width: 100%;
-    margin: 1rem 0;
-  }
+.footer-secondary p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin: 0;
 }

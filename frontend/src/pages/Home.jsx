@@ -32,53 +32,50 @@ function Home() {
 
   return (
   <>
-
-      {/* 1. Seção Hero (Banner) */}
+      {/* 1. NOVA SEÇÃO HERO (com fundo 100% azul) */}
       <section className="hero-section" style={{ backgroundImage: `url(${heroBackground})` }}>
-        <div className="container">
-          <div className="hero-content">
-            <h1>Referência em segurança</h1>
-            <p>Com profissionais altamente capacitados para atender às suas necessidades.</p>
-            <Link to="/empresa" className="hero-button">Conheça nossa empresa</Link>
-          </div>
-        </div>  
+        {/* Container para centralizar o conteúdo */}
+        <div className="container hero-content">
+          <span className="hero-subtitle">Referência em Segurança</span>
+          <h1 className="hero-title">
+            Soluções de Engenharia Multi-Disciplinada
+          </h1>
+          <p className="hero-text">
+            Profissionais altamente capacitados para atender às suas necessidades com excelência.
+          </p>
+          <a href="/contato" className="hero-button">
+            Consulte Agora
+          </a>
+        </div>
       </section>
 
-      {/* 2. Seção "Sobre" (Resumo) */}
+      {/* 2. SEÇÃO "SOBRE" (Agora dentro de um container) */}
       <div className="container">
-      <section className="about-section">
-        <h2>DanPainéis - Montagem e Comércio de Painéis Ltda</h2>
-        <div><p>Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa. <br>
-        </br>
+        <section className="about-section">
+          <h2>DanPainéis - Montagem e Comércio de Painéis Ltda</h2>
+          <p>
+            Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa.
+            Nossa empresa está no mercado há mais de dezoito anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+          </p>
+        </section>
 
-Nossa empresa está no mercado há mais de dezoito anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.<br></br>
-
-Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.<br></br>
-
-
-Este site visa oferecer também formas de contato eficientes para que possamos estabelecer uma comunicação eficiente e rápida entre a empresa e os clientes.<br></br></p></div>
-        {/* Adicione o resto do texto e o botão "Saiba mais" */}
-      </section>
-
-      {/* 3. Seção "Produtos em Destaque" */}
-      <section className="featured-products-section">
-        <h2>Produtos em Destaque</h2>
-
-        {/* Lógica de exibição */}
-        {isLoading && <p>Carregando produtos...</p>}
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-
-        {!isLoading && !error && (
-          <div className="products-grid">
-            {featuredProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        )}
-      </section>
-
-    </div>
-  </>
+        {/* 3. SEÇÃO "PRODUTOS EM DESTAQUE" (Dentro do mesmo container) */}
+        <section className="featured-products-section">
+          <h2>Produtos em Destaque</h2>
+          
+          {isLoading && <p>Carregando produtos...</p>}
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+          
+          {!isLoading && !error && (
+            <div className="products-grid">
+              {featuredProducts.map(product => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
+    </>
   );
 }
 
