@@ -1,5 +1,43 @@
-
 [
+  {
+    "id": "1",
+    "slug": "quadro-de-comando",
+    "name": "Quadro de Comando",
+    "mainImage": "/assets/Quadro-de-Comando/Quadro-de-Comando-1.webp",
+    "galleryImages": [
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-1.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-2.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-3.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-4.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-5.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-6.webp",
+      "/assets/Quadro-de-Comando/Quadro-de-Comando-7.webp"
+    ],
+    "specifications": [
+      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
+      { "property": "Identificação", "value": "Identificação externa são feitas com plaquetas em acrílico." },
+      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável." },
+      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão." },
+      { "property": "Software", "value": "Projeto em Auto Cad." }
+    ],
+    "featured": true
+  },
+  {
+    "id": "2",
+    "slug": "qgbt-baixa-tensao",
+    "name": "Quadro Geral Baixa Tensão",
+    "mainImage": "https://i.imgur.com/qgbt-main.jpg",
+    "galleryImages": [
+      "https://i.imgur.com/qgbt-1.jpg",
+      "https://i.imgur.com/qgbt-2.jpg"
+    ],
+    "specifications": [
+      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, protegidos e pintados." },
+      { "property": "Proteção", "value": "Partes vivas do QGBT são protegidas por acrílico ou policarbonato transparente." }
+    ],
+    "featured": true
+  },
+
   {
     "id": "1",
     "slug": "quadro-de-comando",
