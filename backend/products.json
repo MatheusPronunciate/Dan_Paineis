@@ -3,15 +3,15 @@
     "id": "1",
     "slug": "quadro-de-comando",
     "name": "Quadro de Comando",
-    "mainImage": "/assets/Quadro-de-Comando/Quadro-de-Comando-1.webp",
+    "mainImage": "/assets/Quadro_de_Comando/Quadro_de_Comando-01.webp",
     "galleryImages": [
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-1.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-2.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-3.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-4.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-5.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-6.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando-7.webp"
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-01.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-02.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-03.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-04.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-05.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-06.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-07.webp"
     ],
     "specifications": [
       { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
