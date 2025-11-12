@@ -5,13 +5,13 @@
     "name": "Quadro de Comando",
     "mainImage": "/assets/Quadro-de-Comando/Quadro-de-Comando-1.webp",
     "galleryImages": [
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-1.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-2.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-3.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-4.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-5.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-6.webp",
-      "/assets/Quadro-de-Comando/Quadro-de-Comando-7.webp"
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-1.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-2.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-3.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-4.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-5.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-6.webp",
+      "/assets/Quadro_de_Comando/Quadro_de_Comando-7.webp"
     ],
     "specifications": [
       { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
