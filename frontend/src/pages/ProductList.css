@@ -1,8 +1,10 @@
 /* src/pages/ProductList.css */
+
 .product-list-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  /* O .container (do Layout) já cuida do espaçamento lateral.
+     Vamos apenas adicionar o espaçamento vertical. */
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .list-header {
@@ -11,11 +13,24 @@
 }
 
 .list-header h1 {
-  font-size: 2.5rem;
+  /* Usa a fonte 'Archivo' (definida no body) */
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: var(--cor-texto); /* Usa a variável de texto */
   margin-bottom: 0.5rem;
 }
 
 .list-header p {
+  /* Usa a fonte 'Roboto' (definida no body) */
   font-size: 1.1rem;
-  color: #555;
+  color: var(--cor-texto); /* Usa a variável de texto */
+  opacity: 0.7; /* Deixa o subtítulo um pouco mais suave */
+  max-width: 600px;
+  margin: 0 auto;
 }
+
+/* A classe .products-grid é global (do index.css)
+  e .product-card tem seu próprio CSS.
+  Não precisamos reestilizá-los aqui!
+*/

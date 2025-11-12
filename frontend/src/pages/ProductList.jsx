@@ -28,7 +28,7 @@ function ProductList() {
   }, []); // Array vazio, roda apenas uma vez
 
   return (
-    <div className="product-list-container">
+    <div className="container product-list-container">
       <div className="list-header">
         <h1>Nosso Catálogo de Produtos</h1>
         <p>Conheça todas as nossas soluções em painéis elétricos, quadros de comando e mais.</p>

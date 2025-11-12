@@ -54,7 +54,7 @@ function ProductDetail() {
 
   // --- Renderização de Sucesso ---
   return (
-    <div className="product-detail-container">
+    <div className="container product-detail-container">
       <div className="product-detail-header">
         <Link to="/produtos" className="back-link">&larr; Voltar ao catálogo</Link>
         <h1>{product.name}</h1>

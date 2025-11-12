@@ -52,7 +52,7 @@ function Contato() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="container contact-container">
       <div className="contact-header">
         <h1>Entre em Contato</h1>
         <p>Envie-nos uma mensagem ou venha nos visitar. Estamos prontos para atender.</p>

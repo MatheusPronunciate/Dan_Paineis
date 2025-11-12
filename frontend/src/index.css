@@ -133,4 +133,5 @@ button:focus-visible {
 
 .main-container {
   flex-grow: 1;
+  padding-bottom: 5rem;
 }
