@@ -1,29 +1,30 @@
 // src/pages/ProductDetail.jsx
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Importe o useParams e Link
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import './ProductDetail.css'; // CSS para os detalhes
+import Lightbox from "yet-another-react-lightbox"; // O Lightbox que instalamos
+import "yet-another-react-lightbox/styles.css";
+
+import Sidebar from '../components/Sidebar'; // Importe a nova Sidebar
+import './ProductDetail.css';
 
 function ProductDetail() {
-  // 1. Pega o parâmetro 'slug' da URL (vamos ajustar a Rota no App.jsx)
   const { slug } = useParams(); 
-
   const [product, setProduct] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar o Lightbox
   const [error, setError] = useState(null);
+  
+  // Estado para o Lightbox
+  const [openLightbox, setOpenLightbox] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   useEffect(() => {
     const fetchProduct = async () => {
       setIsLoading(true);
       try {
-        // 2. Faz a chamada de API usando o slug
         const response = await axios.get(`https://danpaineis-api.onrender.com/api/products/${slug}`);
         setProduct(response.data);
       } catch (err) {
-        console.error(`Erro ao buscar produto ${slug}:`, err);
         if (err.response && err.response.status === 404) {
           setError("Produto não encontrado.");
         } else {
@@ -33,64 +34,91 @@ function ProductDetail() {
         setIsLoading(false);
       }
     };
-
     fetchProduct();
-  }, [slug]); // 3. IMPORTANTE: O useEffect depende do 'slug'
-               // Se o slug na URL mudar, a API é chamada de novo.
+  }, [slug]);
+
+  // --- Funções do Lightbox ---
+  const openImage = (index) => {
+    setLightboxIndex(index);
+    setOpenLightbox(true);
+  };
+  
+  const slides = product?.galleryImages.map(imgUrl => ({ src: imgUrl })) || [];
 
   // --- Estados de Renderização ---
   if (isLoading) {
-    return <p>Carregando detalhes do produto...</p>;
+    return <div className="container"><p>Carregando detalhes do produto...</p></div>;
   }
-
   if (error) {
-    return <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>;
+    return <div className="container"><p style={{ color: 'red' }}>{error}</p></div>;
   }
-
   if (!product) {
-    // Isso não deve acontecer se o loading/error funcionar, mas é uma boa prática
-    return <p>Produto não disponível.</p>;
+    return <div className="container"><p>Produto não disponível.</p></div>;
   }
 
-  // --- Renderização de Sucesso ---
+  // --- Renderização Principal ---
   return (
-    <div className="container product-detail-container">
-      <div className="product-detail-header">
-        <Link to="/produtos" className="back-link">&larr; Voltar ao catálogo</Link>
-        <h1>{product.name}</h1>
+    <>
+      <div className="container product-detail-container">
+        
+        {/* Coluna Principal (Esquerda) */}
+        <main className="product-detail-main">
+          
+          {/* 1. Breadcrumbs */}
+          <nav className="breadcrumbs">
+            <Link to="/">Home</Link>
+            <span>/</span>
+            <Link to="/produtos">Produtos</Link>
+            <span>/</span>
+            <span>{product.name}</span>
+          </nav>
+
+          {/* 2. Título */}
+          <h1 className="product-title">{product.name}</h1>
+
+          {/* 3. Galeria de Imagens */}
+          <div className="product-gallery">
+            {product.galleryImages && product.galleryImages.map((image, index) => (
+              <div 
+                className="gallery-image" 
+                key={index}
+                onClick={() => openImage(index)}
+              >
+                <img src={image} alt={`${product.name} - imagem ${index + 1}`} />
+              </div>
+            ))}
+          </div>
+
+          {/* 4. Descrição em Tabela */}
+          <div className="description-section">
+            <h3 className="description-title">Descrição</h3>
+            <table className="description-table">
+              <tbody>
+                {product.specifications && product.specifications.map((spec, index) => (
+                  <tr key={index}>
+                    <td className="spec-property">{spec.property}</td>
+                    <td className="spec-value">{spec.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        
+        </main>
+        
+        {/* Coluna da Sidebar (Direita) */}
+        <Sidebar /> {/* Nosso novo componente! */}
+
       </div>
 
-      <div className="product-detail-layout">
-        <div className="product-detail-image">
-          <img
-            src={product.imageUrl}
-            alt={product.name}
-            onClick={() => setIsOpen(true)} // Abre o Lightbox ao clicar
-            style={{ cursor: 'pointer' }} // Indica que é clicável
-          />
-          <Lightbox
-            open={isOpen}
-            close={() => setIsOpen(false)}
-            slides={[
-              { src: product.imageUrl },
-            ]}
-          />
-
-        </div>
-        <div className="product-detail-info">
-          <h3>Descrição do Produto</h3>
-          <p>{product.description}</p>
-
-          {/* Você pode adicionar mais campos aqui se eles existirem no JSON 
-              (ex: especificações técnicas, dimensões, etc.) 
-          */}
-
-          <Link to="/contato" className="quote-button">
-            Solicitar Orçamento
-          </Link>
-        </div>
-      </div>
-    </div>
+      {/* Componente Lightbox (fica fora do layout) */}
+      <Lightbox
+        open={openLightbox}
+        close={() => setOpenLightbox(false)}
+        slides={slides}
+        index={lightboxIndex}
+      />
+    </>
   );
 }
 

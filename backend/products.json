@@ -16,8 +16,8 @@
     "specifications": [
       { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
       { "property": "Identificação", "value": "Identificação externa são feitas com plaquetas em acrílico." },
-      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável." },
-      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão." },
+      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente." },
+      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos." },
       { "property": "Software", "value": "Projeto em Auto Cad." }
     ],
     "featured": true

@@ -1,129 +1,129 @@
 /* src/pages/ProductDetail.css */
 
+/* --- Layout Principal da Página --- */
 .product-detail-container {
-  /* Espaçamento vertical */
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr; /* Coluna principal 70%, Sidebar 30% */
+  gap: 2.5rem;
+  padding-top: 2rem;
 }
 
-.product-detail-header {
-  border-bottom: 2px solid var(--cor-borda); /* Usa a variável de borda */
-  padding-bottom: 1.5rem;
+/* --- Breadcrumbs (Home / Produtos / ...) --- */
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  opacity: 0.7;
+}
+.breadcrumbs a {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs span {
+  margin: 0 0.5rem;
+}
+
+/* --- Título --- */
+.product-title {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--cor-texto);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--cor-borda);
+  padding-bottom: 1rem;
+}
+
+/* --- Galeria de Imagens --- */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 1rem;
   margin-bottom: 2.5rem;
 }
 
-/* --- "Voltar ao catálogo" --- */
-.back-link {
-  text-decoration: none;
-  color: var(--cor-highlight); /* Dourado */
-  font-family: 'Archivo', sans-serif;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 1rem;
-  transition: all 0.3s ease;
-}
-
-.back-link:hover {
-  opacity: 0.8;
-  transform: translateX(-3px);
-}
-
-/* --- Título do Produto --- */
-.product-detail-header h1 {
-  margin: 0;
-  font-family: 'Archivo', sans-serif;
-  font-weight: 800;
-  font-size: 2.8rem;
-  color: var(--cor-texto); /* Usa a variável de texto */
-  line-height: 1.2;
-}
-
-/* --- Layout (Grid) --- */
-.product-detail-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 3rem;
-}
-
-/* --- Imagem do Produto --- */
-.product-detail-image {
-  height: 450px; /* Altura fixa (ajuste se preferir) */
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: var(--cor-fundo-card); /* Cor de fundo do card */
+.gallery-image {
   border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px; /* Altura fixa, ajuste se precisar */
+  cursor: pointer;
+  background-color: var(--cor-fundo-card);
 }
 
-.product-detail-image img {
+.gallery-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem cobrir o box */
-  cursor: pointer; /* Para o lightbox */
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.product-detail-image img:hover {
-  transform: scale(1.05);
+.gallery-image img:hover {
+  transform: scale(1.1);
 }
 
-/* --- Informações do Produto --- */
-.product-detail-info h3 {
+/* --- Descrição (Tabela) --- */
+.description-title {
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--cor-texto);
-  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.description-table {
+  width: 100%;
+  border-collapse: collapse; /* Tira as bordas duplas */
+}
+
+.description-table tr {
   border-bottom: 1px solid var(--cor-borda);
-  padding-bottom: 0.5rem;
 }
 
-.product-detail-info p {
-  /* Nós já corrigimos isso, mas vamos garantir */
-  font-size: 1.1rem;
-  line-height: 1.7;
+.description-table tr:last-child {
+  border-bottom: none;
+}
+
+.description-table td {
+  padding: 1rem 0.5rem;
+  vertical-align: top;
   color: var(--cor-texto);
-  opacity: 0.9;
 }
 
-/* --- Botão (Estilo "Axial") --- */
-.quote-button {
-  display: inline-block;
-  font-family: 'Archivo', sans-serif;
+.description-table .spec-property {
   font-weight: 700;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  /* Usa as cores primárias (laranja) que definimos */
-  background-color: var(--cor-primaria);
-  color: var(--cor-primaria-texto);
-  
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  transition: all 0.3s ease;
-  border: none;
+  width: 30%; /* Coluna da "Propriedade" */
 }
 
-.quote-button:hover {
-  background-color: var(--cor-primaria-hover);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.description-table .spec-value {
+  width: 70%;
+  line-height: 1.6;
 }
 
 /* --- Responsividade (Mobile) --- */
-@media (max-width: 768px) {
-  .product-detail-layout {
-    /* Empilha as colunas */
-    grid-template-columns: minmax(0, 1fr); 
-    gap: 2rem;
+@media (max-width: 900px) {
+  /* Empilha as colunas em telas menores */
+  .product-detail-container {
+    grid-template-columns: 1fr; 
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* A galeria fica com 2 colunas em vez de 3 */
+  .product-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .product-detail-header h1 {
-    font-size: 2.2rem;
+  .gallery-image {
+    height: 150px; /* Imagens menores no mobile */
   }
-  
-  .product-detail-image {
-    height: 350px; /* Altura menor no mobile */
+
+  .product-title {
+    font-size: 2rem;
   }
 }

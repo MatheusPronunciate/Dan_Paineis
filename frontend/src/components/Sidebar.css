@@ -1,0 +1,82 @@
+/* src/components/Sidebar.css */
+
+.product-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-widget {
+  width: 100%;
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-fundo);
+}
+
+.widget-title {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: var(--cor-highlight); /* Dourado */
+  color: var(--cor-fundo-navbar); /* Texto Azul/Preto */
+  padding: 0.75rem 1rem;
+  margin: 0;
+}
+
+/* --- Widget de Lista de Produtos --- */
+.widget-product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-product-list li a {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  text-decoration: none;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+  transition: all 0.2s ease;
+}
+
+.widget-product-list li:last-child a {
+  border-bottom: none;
+}
+
+.widget-product-list li a:hover {
+  background-color: rgba(0, 0, 0, 0.03); /* Leve destaque no hover */
+  color: var(--cor-primaria); /* Laranja */
+  padding-left: 1.25rem;
+}
+
+/* --- Widget de Contato --- */
+.widget-contact {
+  background-color: var(--cor-fundo-card); /* Cinza claro/escuro */
+  padding: 1rem;
+  text-align: center;
+}
+
+.widget-contact .widget-title {
+  background-color: var(--cor-primaria); /* Laranja */
+  color: var(--cor-primaria-texto);
+}
+
+.widget-contact p {
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  opacity: 0.8;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.widget-contact .phone-number {
+  display: block;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
