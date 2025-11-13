@@ -3,15 +3,15 @@
     "id": "1",
     "slug": "quadro-de-comando",
     "name": "Quadro de Comando",
-    "mainImage": "/assets/Quadro_de_Comando/Quadro_de_Comando_01.webp",
+    "mainImage": "https://www.danpaineis.com.br/imagens/galeria/produto-01-01.webp",
     "galleryImages": [
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_01.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_02.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_03.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_04.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_05.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_06.webp",
-      "/assets/Quadro_de_Comando/Quadro_de_Comando_07.webp"
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-01.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-02.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-03.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-04.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-05.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-06.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-01-07.webp"
     ],
     "specifications": [
       { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
