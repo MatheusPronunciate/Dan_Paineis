@@ -45,6 +45,62 @@
  { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
     ],
     "featured": true
-  }
+  },
 
+  {
+    "id": "3",
+    "slug": "quadro-de-distribuicao-estabilizado-ou-no-break",
+    "name": "Quadro de Distribuição Estabilizado ou No Break",
+    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-03-01.webp",
+    "galleryImages": [
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-01.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-02.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-03.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-04.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-05.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-06.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-07.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-03-08.webp"
+    ],
+    "specifications": [
+      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do painel conforme necessidades do cliente." },
+      { "property": "Identificação", "value": "Identificação externa são feitas com plaquetas em acrílico." },
+      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." },
+      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos." },
+      { "property": "Software", "value": "Projeto em Auto Cad." },
+      { "property": "Projeto Adicional", "value": "Dimensionamento do armário ou caixa e projeto do QDE ou QDNB conforme necessidades do cliente." },
+      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808." },
+      { "property": "Proteção", "value": "Todas partes vivas do QDE ou QDNB são protegidas por acrílico ou policarbonato transparente." },
+      { "property": "Proteção Metálica", "value": "Todas partes metálicas por onde passam os barramentos são protegidas com fenolite." },
+      { "property": "Barramento Neutro/Terra", "value": "Barramento de neutro e terra com furações de acordo com o número de circuitos." },
+      { "property": "Identificação Adicional", "value": "Identificação externa e interna feita com plaquetas em acrílico." },
+      { "property": "Normas Adicionais", "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
+    ],
+    "featured": false
+  },
+
+  {
+    "id": "4",
+    "slug": "quadro-de-distribuicao",
+    "name": "Quadro de Distribuição",
+    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-04-01.webp",
+    "galleryImages": [
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-01.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-02.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-03.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-04.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-05.webp",
+      "https://www.danpaineis.com.br/imagens/galeria/produto-04-06.webp"
+    ],
+    "specifications": [
+      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QD conforme necessidades do cliente." },
+      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808." },
+      { "property": "Proteção", "value": "Todas partes vivas do QD são protegidas por acrílico ou policarbonato transparente." },
+      { "property": "Proteção Metálica", "value": "Todas partes metálicas por onde passam os barramentos são protegidas com fenolite." },
+      { "property": "Barramento Neutro/Terra", "value": "Barramento de neutro e terra com furações de acordo com o número de circuitos." },
+      { "property": "Identificação", "value": "Identificação externa e interna feita com plaquetas em acrílico." },
+      { "property": "Normas", "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
+    ],
+    "featured": true
+  }
 ]
