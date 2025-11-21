@@ -1,0 +1,61 @@
+.regions-tabs-container {
+  margin-top: 3rem;
+  background-color: var(--cor-fundo-card);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+}
+
+.regions-tabs-container h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-family: 'Archivo', sans-serif;
+  color: var(--cor-texto);
+}
+
+.regions-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--cor-borda);
+  padding-bottom: 1rem;
+}
+
+.regions-nav button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  color: var(--cor-texto);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.regions-nav button:hover {
+  opacity: 1;
+  color: var(--cor-primaria);
+}
+
+.regions-nav button.active {
+  opacity: 1;
+  background-color: var(--cor-borda);
+  color: var(--cor-texto);
+  border-radius: 4px;
+}
+
+.regions-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.regions-content li {
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+}

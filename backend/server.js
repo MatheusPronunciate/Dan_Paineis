@@ -6,6 +6,8 @@ const port = process.env.PORT || 3001;
 
 const products = require('./products.json');
 
+const infos = require('./infos.json');
+
 app.use(cors());
 app.use(express.json());
 
@@ -60,4 +62,21 @@ app.post('/api/contact', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Backend rodando na porta ${port}`);
+});
+
+// Listar todas as infos (para a Sidebar)
+app.get('/api/infos', (req, res) => {
+  // Retorna apenas id, slug e titulo para ficar leve
+  const list = infos.map(({ id, slug, title }) => ({ id, slug, title }));
+  res.json(list);
+});
+
+// Pegar detalhes de uma info específica
+app.get('/api/infos/:slug', (req, res) => {
+  const info = infos.find(i => i.slug === req.params.slug);
+  if (info) {
+    res.json(info);
+  } else {
+    res.status(404).send('Página de informação não encontrada');
+  }
 });

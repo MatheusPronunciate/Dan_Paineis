@@ -11,6 +11,7 @@ import Empresa from './pages/Empresa';
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail'; // A página de detalhe
 import Contato from './pages/Contato';
+import InfoDetail from './pages/InfoDetail';
 // (Importe aqui a página de 'Informacoes' quando a criar)
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="produtos" element={<ProductList />} />
         <Route path="produtos/:slug" element={<ProductDetail />} />
         
+        <Route path="informacoes/:slug" element={<InfoDetail />} />
         {/* Rota de Contato */}
         <Route path="contato" element={<Contato />} />
 

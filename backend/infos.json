@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "slug": "empresa-montagem-painel-eletrico",
+    "title": "Empresa de montagem de painel elétrico",
+    "images": [
+      "https://www.danpaineis.com.br/imagens/informacoes/empresa-montagem-painel-eletrico-01.webp",
+      "https://www.danpaineis.com.br/imagens/informacoes/empresa-montagem-painel-eletrico-02.webp",
+      "https://www.danpaineis.com.br/imagens/informacoes/empresa-montagem-painel-eletrico-03.webp"
+    ],
+    "content": "Uma empresa de montagem de painel elétrico possui diferentes modelos de quadros em seu portfólio para atender as variadas demandas de sua clientela quanto ao consumo de energia elétrica.\n\n<h2>TIPOS DE QUADROS ELÉTRICOS</h2>\n<p><strong>Quadro de Comando</strong> – esse produto projetado por uma empresa de montagem de painel elétrico possui armário ou caixa dimensionado de acordo com a necessidade de cada cliente.</p>\n<p><strong>Quadro Geral de Baixa Tensão (QGBT)</strong> – na lista de produtos que englobam o portfólio de uma empresa de montagem de painel elétrico está o QGBT. Esse quadro elétrico conta com barramentos fabricados em cobre eletrolítico.</p>\n<h2>CONSIDERAÇÕES IMPORTANTES</h2>\n<p>Uma empresa de montagem de painel elétrico monta e projeta quadros elétricos de acordo com as normas ABNT, Nema, Ansi, IEC e NEC.</p>"
+  },
+  {
+    "id": "2",
+    "slug": "fabricante-paineis-eletricos",
+    "title": "Fabricante de painéis elétricos",
+    "images": [],
+    "content": "<p>Conteúdo sobre fabricante de painéis...</p>"
+  }
+]
