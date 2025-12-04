@@ -59,6 +59,7 @@ function InfoDetail() {
                   <img src={slide.src} alt={info.title} />
                 </div>
               ))}
+              <p><em>Clique nas imagens para ampliar</em></p>
             </div>
           )}
 

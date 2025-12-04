@@ -18,9 +18,7 @@ import InfoDetail from './pages/InfoDetail';
 function App() {
   return (
     <Routes>
-      {/* A rota "pai" (Layout) envolve todas as outras.
-        Todas as rotas filhas serão renderizadas dentro do <Outlet /> do Layout.
-      */}
+      
       <Route path="/" element={<Layout />}>
         {/* Rota da Página Inicial */}
         <Route index element={<Home />} />

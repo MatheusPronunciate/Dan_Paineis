@@ -50,7 +50,7 @@
   border: 1px solid var(--cor-borda);
   border-radius: 8px;
   overflow: hidden;
-  height: 200px; /* Altura fixa, ajuste se precisar */
+  height: 400px; /* Altura fixa, ajuste se precisar */
   cursor: pointer;
   background-color: var(--cor-fundo-card);
 }
