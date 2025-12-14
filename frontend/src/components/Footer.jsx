@@ -39,7 +39,7 @@ function Footer() {
           <div className="footer-block">
             <h4 className="footer-title">Contatos</h4>
             <ul className="footer-contact">
-              <li>Rua Bixio, 28 - Vila Oratório</li>
+              <li>Rua Barra Negra, 39, vila Oratório</li>
               <li>São Paulo/SP - CEP: 03192-040</li>
               <li>(11) 2852-5968</li>
             </ul>

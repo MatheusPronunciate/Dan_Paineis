@@ -65,7 +65,7 @@ function Contato() {
           <h3>Nossas Informações</h3>
           <p>
             <strong>Endereço:</strong><br />
-            Rua Bixio, 28 - Vila Oratório<br />
+            Rua Barra Negra, 39, vila Oratório<br />
             São Paulo/SP - CEP: 03192-040
           </p>
           <p>
