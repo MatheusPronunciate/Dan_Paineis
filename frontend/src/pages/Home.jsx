@@ -16,7 +16,7 @@ function Home() {
     // Função para buscar os dados
     const fetchFeaturedProducts = async () => {
       try {
-        
+
         const response = await axios.get('https://danpaineis-api.onrender.com/api/products/featured');
         setFeaturedProducts(response.data);
       } catch (err) {
@@ -38,7 +38,7 @@ function Home() {
         <div className="container hero-content">
           <span className="hero-subtitle">Referência em Segurança</span>
           <h1 className="hero-title">
-            Soluções de Engenharia Multi-Disciplinada
+            Soluções de Engenharia
           </h1>
           <p className="hero-text">
             Profissionais altamente capacitados para atender às suas necessidades com excelência.
@@ -55,17 +55,20 @@ function Home() {
           <h2>DanPainéis - Montagem e Comércio de Painéis Ltda</h2>
           <p>
             Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa.
-            Nossa empresa está no mercado há mais de dezoito anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+            Nossa empresa está no mercado há mais de vinte e três anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+            <br />
+            <br />
+            Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.
           </p>
         </section>
 
         {/* 3. SEÇÃO "PRODUTOS EM DESTAQUE" (Dentro do mesmo container) */}
         <section className="featured-products-section">
           <h2>Produtos em Destaque</h2>
-          
+
           {isLoading && <p>Carregando produtos...</p>}
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          
+
           {!isLoading && !error && (
             <div className="products-grid">
               {featuredProducts.map(product => (

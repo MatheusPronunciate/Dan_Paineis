@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer-container">
       <div className="container"> {/* Já usamos o .container para centralizar */}
-        
+
         <div className="footer-main">
           {/* Bloco 1: Logo e Descrição */}
           <div className="footer-block">
@@ -51,7 +51,7 @@ function Footer() {
               <a href="https://www.instagram.com/danpaineis/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/11976524520" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
             </div>

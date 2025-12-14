@@ -24,11 +24,11 @@ function InfoList() {
 
   return (
     <div className="container product-detail-container">
-      
+
       {/* Coluna Principal: Lista de Artigos */}
       <main className="product-detail-main">
-        <h1 className="product-title">Informações Técnicas</h1>
-        
+        <h1 className="product-title">Informações</h1>
+
         {isLoading ? (
           <p>Carregando informações...</p>
         ) : (
@@ -40,8 +40,8 @@ function InfoList() {
                     {info.title}
                   </h3>
                 </Link>
-                <Link 
-                  to={`/informacoes/${info.slug}`} 
+                <Link
+                  to={`/informacoes/${info.slug}`}
                   style={{ color: 'var(--cor-highlight)', fontWeight: 'bold', textDecoration: 'none', textTransform: 'uppercase', fontSize: '0.9rem' }}
                 >
                   Ler mais &rarr;
@@ -54,7 +54,7 @@ function InfoList() {
 
       {/* Coluna da Direita: Sidebar */}
       <InfoSidebar />
-      
+
     </div>
   );
 }

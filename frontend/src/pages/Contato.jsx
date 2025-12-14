@@ -15,7 +15,7 @@ function Contato() {
   // Estado para controlar o feedback de envio
   const [isSending, setIsSending] = useState(false);
   // 'null', 'success', ou 'error'
-  const [submitStatus, setSubmitStatus] = useState(null); 
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   // Função genérica para atualizar o estado quando um input muda
   const handleChange = (e) => {
@@ -73,9 +73,16 @@ function Contato() {
             (11) 2852-5968<br />
             (11) 2384-0046
           </p>
+          <strong >Whatsapp:</strong>
+          <p>
+            <a href="https://wa.me/11976524520" target="_blank" rel="noopener noreferrer">
+              (11) 976524520
+            </a>
+          </p>
+
           <p>
             <strong>Email:</strong><br />
-            contato@danpaineis.com.br {/* (Email de exemplo) */}
+            danpaineis@danpaineis.com.br {/* (Email de exemplo) */}
           </p>
           {/* Você pode adicionar um Google Maps embarcado aqui */}
         </div>
