@@ -5,7 +5,8 @@
   display: grid;
   grid-template-columns: 2.5fr 1fr; /* Coluna principal 70%, Sidebar 30% */
   gap: 2.5rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /* --- Breadcrumbs (Home / Produtos / ...) --- */
@@ -108,7 +109,7 @@
 @media (max-width: 900px) {
   /* Empilha as colunas em telas menores */
   .product-detail-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 3rem;
   }
 }

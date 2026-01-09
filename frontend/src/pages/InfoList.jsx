@@ -1,60 +1,36 @@
-// src/pages/InfoList.jsx
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import InfoSidebar from '../components/InfoSidebar';
-import './ProductDetail.css'; // Reutilizamos o layout grid que já criamos!
+import './InfoList.css';
+import infosData from '../data/infos.json'; // IMPORTAÇÃO DIRETA
 
 function InfoList() {
-  const [infos, setInfos] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Busca a lista do seu backend
-    axios.get('https://danpaineis-api.onrender.com/api/infos')
-      .then(response => {
-        setInfos(response.data);
-        setIsLoading(false);
-      })
-      .catch(error => {
-        console.error("Erro ao buscar infos", error);
-        setIsLoading(false);
-      });
-  }, []);
-
   return (
-    <div className="container product-detail-container">
+    <div className="container info-list-container">
+      <div className="list-header">
+        <h1>Informações Técnicas</h1>
+        <p>Artigos, guias e especificações sobre nossos serviços.</p>
+      </div>
 
-      {/* Coluna Principal: Lista de Artigos */}
-      <main className="product-detail-main">
-        <h1 className="product-title">Informações</h1>
+      <div className="info-grid">
+        {infosData.map(info => {
+          // Lógica da imagem (agora local)
+          const thumbImage = (info.images && info.images.length > 0)
+            ? info.images[0]
+            : '/imagens/placeholder.jpg'; // Caminho relativo
 
-        {isLoading ? (
-          <p>Carregando informações...</p>
-        ) : (
-          <div className="info-grid">
-            {infos.map(info => (
-              <div key={info.id} style={{ marginBottom: '2rem', paddingBottom: '1rem', borderBottom: '1px solid var(--cor-borda)' }}>
-                <Link to={`/informacoes/${info.slug}`} style={{ textDecoration: 'none' }}>
-                  <h3 style={{ color: 'var(--cor-texto)', fontFamily: 'Archivo, sans-serif', marginBottom: '0.5rem' }}>
-                    {info.title}
-                  </h3>
-                </Link>
-                <Link
-                  to={`/informacoes/${info.slug}`}
-                  style={{ color: 'var(--cor-highlight)', fontWeight: 'bold', textDecoration: 'none', textTransform: 'uppercase', fontSize: '0.9rem' }}
-                >
-                  Ler mais &rarr;
-                </Link>
+          return (
+            <Link to={`/informacoes/${info.slug}`} key={info.id} className="info-card">
+              <div className="info-card-image">
+                <img src={thumbImage} alt={info.title} />
               </div>
-            ))}
-          </div>
-        )}
-      </main>
-
-      {/* Coluna da Direita: Sidebar */}
-      <InfoSidebar />
-
+              <div className="info-card-content">
+                <h3>{info.title}</h3>
+                <span className="read-more">Ler Artigo &rarr;</span>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 }
