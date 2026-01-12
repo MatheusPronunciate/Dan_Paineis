@@ -1,15 +1,15 @@
+// src/pages/InfoDetail.jsx
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import InfoSidebar from '../components/InfoSidebar';
-import RegionsTabs from '../components/RegionsTabs';
 import './ProductDetail.css';
-import infosData from '../data/infos.json'; // IMPORTAÇÃO
+import infosData from '../data/infos.json';
 
 function InfoDetail() {
   const { slug } = useParams();
-  const info = infosData.find(i => i.slug === slug); // Busca direta
+  const info = infosData.find(i => i.slug === slug);
 
   const [openLightbox, setOpenLightbox] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -44,7 +44,7 @@ function InfoDetail() {
             dangerouslySetInnerHTML={{ __html: info.content }}
           />
 
-          <RegionsTabs />
+          {/* O componente <RegionsTabs /> foi removido daqui */}
         </main>
         <InfoSidebar />
       </div>
