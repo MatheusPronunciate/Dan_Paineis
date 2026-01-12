@@ -3,19 +3,19 @@
     "id": "1",
     "slug": "quadro-de-comando",
     "name": "Quadro de Comando",
-    "image": "/images/products/quadro-de-comando-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-de-comando-capa.webp",
     "description": "Quadro de Comando",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-de-comando-01.webp",
-      "/images/products/quadro-de-comando-02.webp",
-      "/images/products/quadro-de-comando-03.webp",
-      "/images/products/quadro-de-comando-04.webp",
-      "/images/products/quadro-de-comando-05.webp",
-      "/images/products/quadro-de-comando-06.webp",
-      "/images/products/quadro-de-comando-07.webp"
+      "/Dan_Paineis/images/products/quadro-de-comando-01.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-02.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-03.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-04.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-05.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-06.webp",
+      "/Dan_Paineis/images/products/quadro-de-comando-07.webp"
     ],
     "specifications": [
       {
@@ -48,18 +48,18 @@
     "id": "2",
     "slug": "quadro-geral-baixa-tensao",
     "name": "Quadro Geral Baixa Tensão",
-    "image": "/images/products/quadro-geral-baixa-tensao-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-capa.webp",
     "description": "Quadro Geral Baixa Tensão",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-geral-baixa-tensao-01.webp",
-      "/images/products/quadro-geral-baixa-tensao-02.webp",
-      "/images/products/quadro-geral-baixa-tensao-03.webp",
-      "/images/products/quadro-geral-baixa-tensao-04.webp",
-      "/images/products/quadro-geral-baixa-tensao-05.webp",
-      "/images/products/quadro-geral-baixa-tensao-06.webp"
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-01.webp",
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-02.webp",
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-03.webp",
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-04.webp",
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-05.webp",
+      "/Dan_Paineis/images/products/quadro-geral-baixa-tensao-06.webp"
     ],
     "specifications": [
       {
@@ -96,20 +96,20 @@
     "id": "3",
     "slug": "quadro-de-distribuicao-estabilizado-ou-no-break",
     "name": "Quadro de Distribuição Estabilizado ou No Break",
-    "image": "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-capa.webp",
     "description": "Quadro de Distribuição Estabilizado ou No Break",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-01.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-02.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-03.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-04.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-05.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-06.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-07.webp",
-      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-08.webp"
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-01.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-02.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-03.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-04.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-05.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-06.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-07.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-08.webp"
     ],
     "specifications": [
       {
@@ -146,18 +146,18 @@
     "id": "4",
     "slug": "quadro-de-distribuicao",
     "name": "Quadro de Distribuição",
-    "image": "/images/products/quadro-de-distribuicao-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-de-distribuicao-capa.webp",
     "description": "Quadro de Distribuição",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-de-distribuicao-01.webp",
-      "/images/products/quadro-de-distribuicao-02.webp",
-      "/images/products/quadro-de-distribuicao-03.webp",
-      "/images/products/quadro-de-distribuicao-04.webp",
-      "/images/products/quadro-de-distribuicao-05.webp",
-      "/images/products/quadro-de-distribuicao-06.webp"
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-01.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-02.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-03.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-04.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-05.webp",
+      "/Dan_Paineis/images/products/quadro-de-distribuicao-06.webp"
     ],
     "specifications": [
       {
@@ -194,17 +194,17 @@
     "id": "5",
     "slug": "quadro-para-transferencia-de-rede-gerador-automatico",
     "name": "Quadro para Transferência de Rede / Gerador Automático",
-    "image": "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-capa.webp",
     "description": "Quadro para Transferência de Rede / Gerador Automático",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-01.webp",
-      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-02.webp",
-      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-03.webp",
-      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-04.webp",
-      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-05.webp"
+      "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-01.webp",
+      "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-02.webp",
+      "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-03.webp",
+      "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-04.webp",
+      "/Dan_Paineis/images/products/quadro-para-transferencia-de-rede-gerador-automatico-05.webp"
     ],
     "specifications": [
       {
@@ -249,16 +249,16 @@
     "id": "6",
     "slug": "quadro-para-banco-automatico-de-capacitores",
     "name": "Quadro para Banco automático de Capacitores",
-    "image": "/images/products/quadro-para-banco-automatico-de-capacitores-capa.webp",
+    "image": "/Dan_Paineis/images/products/quadro-para-banco-automatico-de-capacitores-capa.webp",
     "description": "Quadro para Banco automático de Capacitores",
     "fullDescription": "\n\n",
     "price": 0,
     "category": "Painéis",
     "galleryImages": [
-      "/images/products/quadro-para-banco-automatico-de-capacitores-01.webp",
-      "/images/products/quadro-para-banco-automatico-de-capacitores-02.webp",
-      "/images/products/quadro-para-banco-automatico-de-capacitores-03.webp",
-      "/images/products/quadro-para-banco-automatico-de-capacitores-04.webp"
+      "/Dan_Paineis/images/products/quadro-para-banco-automatico-de-capacitores-01.webp",
+      "/Dan_Paineis/images/products/quadro-para-banco-automatico-de-capacitores-02.webp",
+      "/Dan_Paineis/images/products/quadro-para-banco-automatico-de-capacitores-03.webp",
+      "/Dan_Paineis/images/products/quadro-para-banco-automatico-de-capacitores-04.webp"
     ],
     "specifications": [
       {
