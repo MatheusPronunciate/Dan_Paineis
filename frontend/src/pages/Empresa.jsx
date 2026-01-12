@@ -4,7 +4,7 @@ import './Home.css'; // CSS para a Home
 export default function Empresa() {
   return (
     <>
-    <div className="container hero-content">
+    <div className="empresa">
       <h2>Sobre a Empresa</h2>
       <p>
         Criada em 13/09/2002, a DanPainéis Montagem e Comércio de Painéis Ltda

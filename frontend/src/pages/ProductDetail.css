@@ -105,6 +105,52 @@
   line-height: 1.6;
 }
 
+/* src/pages/ProductDetail.css */
+
+/* ... (Mantenha seus estilos anteriores de grid, breadcrumbs, title, gallery...) */
+
+/* --- NOVO: Texto Descritivo --- */
+.product-description-text {
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  color: var(--cor-texto);
+  font-size: 1.05rem;
+  text-align: justify; /* Fica mais organizado */
+}
+
+.product-description-text p {
+  margin-bottom: 1.5rem;
+}
+
+.product-description-text strong {
+  color: var(--cor-primaria); /* Destaca negritos */
+}
+
+/* --- Tabela (Pequenos ajustes) --- */
+.description-section {
+  background-color: #f9f9f9; /* Fundo leve para separar visualmente */
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+}
+
+.description-title {
+  margin-top: 0;
+  border-bottom: 2px solid var(--cor-highlight);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.description-table td {
+  padding: 1rem; /* Mais respiro na tabela */
+}
+
+.description-table tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.02); /* Efeito zebrado sutil nas linhas */
+}
+
+/* ... (Mantenha o resto da responsividade) */
+
 /* --- Responsividade (Mobile) --- */
 @media (max-width: 900px) {
   /* Empilha as colunas em telas menores */

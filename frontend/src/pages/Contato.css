@@ -32,6 +32,7 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
+  margin-bottom: 4rem;
 }
 
 /* --- Bloco de Informações --- */
@@ -93,7 +94,7 @@
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   border: 1px solid var(--cor-borda);
-  
+
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -118,7 +119,7 @@
   /* Botão Laranja (Primário) */
   background-color: var(--cor-primaria);
   color: var(--cor-primaria-texto);
-  
+
   padding: 1rem 2rem;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -158,10 +159,10 @@
 @media (max-width: 768px) {
   .contact-layout {
     /* Empilha as colunas */
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .contact-header h1 {
     font-size: 2.2rem;
   }

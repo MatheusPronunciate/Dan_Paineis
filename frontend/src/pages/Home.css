@@ -20,6 +20,10 @@
   max-width: 600px; /* Limita a largura do texto */
 }
 
+.empresa {
+  margin-bottom: 4rem;
+}
+
 .hero-subtitle {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;

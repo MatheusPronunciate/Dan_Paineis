@@ -3,104 +3,300 @@
     "id": "1",
     "slug": "quadro-de-comando",
     "name": "Quadro de Comando",
-    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-01-01.webp",
+    "image": "/images/products/quadro-de-comando-capa.webp",
+    "description": "Quadro de Comando",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
     "galleryImages": [
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-01.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-02.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-03.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-04.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-05.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-06.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-01-07.webp"
+      "/images/products/quadro-de-comando-01.webp",
+      "/images/products/quadro-de-comando-02.webp",
+      "/images/products/quadro-de-comando-03.webp",
+      "/images/products/quadro-de-comando-04.webp",
+      "/images/products/quadro-de-comando-05.webp",
+      "/images/products/quadro-de-comando-06.webp",
+      "/images/products/quadro-de-comando-07.webp"
     ],
     "specifications": [
-      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente." },
-      { "property": "Identificação", "value": "Identificação externa são feitas com plaquetas em acrílico." },
-      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente." },
-      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos." },
-      { "property": "Software", "value": "Projeto em Auto Cad." }
-    ],
-    "featured": true
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QC conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa são feitas com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      },
+      {
+        "property": "•",
+        "value": "Cabos de comando são anilhados."
+      },
+      {
+        "property": "•",
+        "value": "Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos."
+      },
+      {
+        "property": "•",
+        "value": "Projeto em Auto Cad."
+      }
+    ]
   },
   {
     "id": "2",
-    "slug": "qgbt-baixa-tensao",
+    "slug": "quadro-geral-baixa-tensao",
     "name": "Quadro Geral Baixa Tensão",
-    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-02-01.webp",
+    "image": "/images/products/quadro-geral-baixa-tensao-capa.webp",
+    "description": "Quadro Geral Baixa Tensão",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
     "galleryImages": [
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-01.webp",
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-02.webp",
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-03.webp",
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-04.webp",
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-05.webp",
- "https://www.danpaineis.com.br/imagens/galeria/produto-02-06.webp"
+      "/images/products/quadro-geral-baixa-tensao-01.webp",
+      "/images/products/quadro-geral-baixa-tensao-02.webp",
+      "/images/products/quadro-geral-baixa-tensao-03.webp",
+      "/images/products/quadro-geral-baixa-tensao-04.webp",
+      "/images/products/quadro-geral-baixa-tensao-05.webp",
+      "/images/products/quadro-geral-baixa-tensao-06.webp"
     ],
     "specifications": [
-      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, protegidos e pintados." },
- { "property": "Proteção", "value": "Partes vivas do QGBT são protegidas por acrílico ou policarbonato transparente." },
- { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QGBT conforme necessidades do cliente." },
- { "property": "Barramentos Adicionais", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808. Barramentos de entrada para facilitar a ligação dos cabos." },
- { "property": "Proteção Adicional", "value": "Todas partes vivas do QGBT são protegidas por acrílico ou policarbonato transparente. As partes metálicas onde passa barramento são protegidas com fenolita." },
- { "property": "Identificação", "value": "Identificação externa e interna feita com plaquetas em acrílico." },
- { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
-    ],
-    "featured": true
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QGBT conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos suportados por isoladores, cobre eletrolítico(99,9%), dimensionados, prateados e pintados conforme NBR6808."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos de entrada para facilitar a ligação dos cabos."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes viva do QGBT são protegidas por agrilico ou policarbonato transparente."
+      },
+      {
+        "property": "•",
+        "value": "As partes metálicas onde passa barramento são protegida com fenolita."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa e interna feita com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      }
+    ]
   },
-
   {
     "id": "3",
     "slug": "quadro-de-distribuicao-estabilizado-ou-no-break",
     "name": "Quadro de Distribuição Estabilizado ou No Break",
-    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-03-01.webp",
+    "image": "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-capa.webp",
+    "description": "Quadro de Distribuição Estabilizado ou No Break",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
     "galleryImages": [
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-01.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-02.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-03.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-04.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-05.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-06.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-07.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-03-08.webp"
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-01.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-02.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-03.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-04.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-05.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-06.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-07.webp",
+      "/images/products/quadro-de-distribuicao-estabilizado-ou-no-break-08.webp"
     ],
     "specifications": [
-      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do painel conforme necessidades do cliente." },
-      { "property": "Identificação", "value": "Identificação externa são feitas com plaquetas em acrílico." },
-      { "property": "Normas", "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." },
-      { "property": "Cabeamento", "value": "Cabos de comando são anilhados. Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos." },
-      { "property": "Software", "value": "Projeto em Auto Cad." },
-      { "property": "Projeto Adicional", "value": "Dimensionamento do armário ou caixa e projeto do QDE ou QDNB conforme necessidades do cliente." },
-      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808." },
-      { "property": "Proteção", "value": "Todas partes vivas do QDE ou QDNB são protegidas por acrílico ou policarbonato transparente." },
-      { "property": "Proteção Metálica", "value": "Todas partes metálicas por onde passam os barramentos são protegidas com fenolite." },
-      { "property": "Barramento Neutro/Terra", "value": "Barramento de neutro e terra com furações de acordo com o número de circuitos." },
-      { "property": "Identificação Adicional", "value": "Identificação externa e interna feita com plaquetas em acrílico." },
-      { "property": "Normas Adicionais", "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
-    ],
-    "featured": false
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QDE ou QDNB conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos suportados por isoladores, cobre eletrolítico(99,9%), dimensionados, prateados e pintados conforme NBR6808."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes viva do QDE ou QDNB são protegidas por agrilico ou policarbonato transparente."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes metálicas por onde passam os barramento são protegidas com fenolite."
+      },
+      {
+        "property": "•",
+        "value": "Barramento de neutro e terra com furações de acordo com o numero de circuitos."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa e interna feita com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      }
+    ]
   },
-
   {
     "id": "4",
     "slug": "quadro-de-distribuicao",
     "name": "Quadro de Distribuição",
-    "imageUrl": "https://www.danpaineis.com.br/imagens/galeria/produto-04-01.webp",
+    "image": "/images/products/quadro-de-distribuicao-capa.webp",
+    "description": "Quadro de Distribuição",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
     "galleryImages": [
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-01.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-02.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-03.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-04.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-05.webp",
-      "https://www.danpaineis.com.br/imagens/galeria/produto-04-06.webp"
+      "/images/products/quadro-de-distribuicao-01.webp",
+      "/images/products/quadro-de-distribuicao-02.webp",
+      "/images/products/quadro-de-distribuicao-03.webp",
+      "/images/products/quadro-de-distribuicao-04.webp",
+      "/images/products/quadro-de-distribuicao-05.webp",
+      "/images/products/quadro-de-distribuicao-06.webp"
     ],
     "specifications": [
-      { "property": "Projeto", "value": "Dimensionamento do armário ou caixa e projeto do QD conforme necessidades do cliente." },
-      { "property": "Barramentos", "value": "Barramentos suportados por isoladores, cobre eletrolítico (99,9%), dimensionados, prateados e pintados conforme NBR6808." },
-      { "property": "Proteção", "value": "Todas partes vivas do QD são protegidas por acrílico ou policarbonato transparente." },
-      { "property": "Proteção Metálica", "value": "Todas partes metálicas por onde passam os barramentos são protegidas com fenolite." },
-      { "property": "Barramento Neutro/Terra", "value": "Barramento de neutro e terra com furações de acordo com o número de circuitos." },
-      { "property": "Identificação", "value": "Identificação externa e interna feita com plaquetas em acrílico." },
-      { "property": "Normas", "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC, IEC, onde aplicável, além das especificações internas de cada cliente." }
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QD conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos suportados por isoladores, cobre eletrolítico(99,9%), dimensionados, prateados e pintados conforme NBR6808."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes viva do QD são protegidas por agrilico ou policarbonato transparente."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes metálicas por onde passam os barramento são protegidas com fenolite."
+      },
+      {
+        "property": "•",
+        "value": "Barramento de neutro e terra com furações de acordo com o numero de circuitos."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa e interna feita com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "quadro-para-transferencia-de-rede-gerador-automatico",
+    "name": "Quadro para Transferência de Rede / Gerador Automático",
+    "image": "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-capa.webp",
+    "description": "Quadro para Transferência de Rede / Gerador Automático",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
+    "galleryImages": [
+      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-01.webp",
+      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-02.webp",
+      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-03.webp",
+      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-04.webp",
+      "/images/products/quadro-para-transferencia-de-rede-gerador-automatico-05.webp"
     ],
-    "featured": true
+    "specifications": [
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QT conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos suportados por isoladores, cobre eletrolítico(99,9%), dimensionados, prateados e pintados conforme NBR6808."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes viva do QT são protegidas por agrilico ou policarbonato transparente."
+      },
+      {
+        "property": "•",
+        "value": "As partes metálicas onde passa barramento são protegida com fenolita."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa e interna feita com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      },
+      {
+        "property": "•",
+        "value": "Cabos de comando são anilhados."
+      },
+      {
+        "property": "•",
+        "value": "Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos."
+      },
+      {
+        "property": "•",
+        "value": "Projeto em Auto Cad."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "quadro-para-banco-automatico-de-capacitores",
+    "name": "Quadro para Banco automático de Capacitores",
+    "image": "/images/products/quadro-para-banco-automatico-de-capacitores-capa.webp",
+    "description": "Quadro para Banco automático de Capacitores",
+    "fullDescription": "\n\n",
+    "price": 0,
+    "category": "Painéis",
+    "galleryImages": [
+      "/images/products/quadro-para-banco-automatico-de-capacitores-01.webp",
+      "/images/products/quadro-para-banco-automatico-de-capacitores-02.webp",
+      "/images/products/quadro-para-banco-automatico-de-capacitores-03.webp",
+      "/images/products/quadro-para-banco-automatico-de-capacitores-04.webp"
+    ],
+    "specifications": [
+      {
+        "property": "•",
+        "value": "Dimensionamento do armário ou caixa e projeto do QAC conforme necessidades do cliente."
+      },
+      {
+        "property": "•",
+        "value": "Barramentos suportados por isoladores, cobre eletrolítico(99,9%), dimensionados, prateados e pintados conforme NBR6808."
+      },
+      {
+        "property": "•",
+        "value": "Todas partes viva do QGBT são protegidas por agrilico ou policarbonato transparente."
+      },
+      {
+        "property": "•",
+        "value": "As partes metálicas onde passa barramento são protegida com fenolita."
+      },
+      {
+        "property": "•",
+        "value": "Identificação externa e interna feita com plaquetas em acrílico."
+      },
+      {
+        "property": "•",
+        "value": "Todos nossos armários ou quadros são montados atendendo as normas ABNT, ANSI, NEMA, NEC,IEC, onde aplicável, além das especificações internas de cada cliente."
+      },
+      {
+        "property": "•",
+        "value": "Cabos de comando são anilhados."
+      },
+      {
+        "property": "•",
+        "value": "Cabos dimensionados de acordo com NBR, com terminais ilhós ou terminal de compressão nas pontas para melhor contato dos cabos."
+      },
+      {
+        "property": "•",
+        "value": "Projeto em Auto Cad."
+      }
+    ]
   }
 ]
