@@ -1,84 +1,66 @@
 // src/pages/Home.jsx
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom'; // Importe o Link
-import ProductCard from '../components/ProductCard'; // Importe seu card
-import './Home.css'; // CSS para a Home
-import heroBackground from '../assets/fundo_tec.jpg'; // Importe a imagem
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ProductCard from '../components/ProductCard';
+import './Home.css';
+import productsData from '../data/products.json';
 
 function Home() {
-  // Estado para guardar os produtos e para controle de loading/erro
-  const [featuredProducts, setFeaturedProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    // Função para buscar os dados
-    const fetchFeaturedProducts = async () => {
-      try {
-
-        const response = await axios.get('https://danpaineis-api.onrender.com/api/products/featured');
-        setFeaturedProducts(response.data);
-      } catch (err) {
-        console.error("Erro ao buscar produtos:", err);
-        setError("Não foi possível carregar os produtos. Tente novamente mais tarde.");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchFeaturedProducts();
-  }, []); // O array vazio [] faz o useEffect rodar apenas uma vez (on mount)
+  const featuredProducts = productsData.slice(0, 3);
 
   return (
-  <>
-      {/* 1. NOVA SEÇÃO HERO (com fundo 100% azul) */}
-      <section className="hero-section" style={{ backgroundImage: `url(${heroBackground})` }}>
-        {/* Container para centralizar o conteúdo */}
-        <div className="container hero-content">
-          <span className="hero-subtitle">Referência em Segurança</span>
-          <h1 className="hero-title">
-            Soluções de Engenharia
-          </h1>
-          <p className="hero-text">
-            Profissionais altamente capacitados para atender às suas necessidades com excelência.
-          </p>
-          <a href="/contato" className="hero-button">
-            Consulte Agora
-          </a>
+    <div className="home-page-wrapper">
+
+      {/* SEÇÃO HERO (Banner) - Ocupa largura total, conteúdo centralizado */}
+      <section className="hero-section">
+        <div className="container hero-container-inner">
+          <div className="hero-content">
+            <h1>Soluções de Engenharia</h1>
+            <p>Profissionais altamente capacitados para atender às suas necessidades com excelência.</p>
+            <Link to="/produtos" className="cta-button">Ver Produtos</Link>
+          </div>
         </div>
       </section>
 
-      {/* 2. SEÇÃO "SOBRE" (Agora dentro de um container) */}
-      <div className="container">
-        <section className="about-section">
-          <h2>DanPainéis - Montagem e Comércio de Painéis Ltda</h2>
+      {/* SEÇÃO INTRO - Centralizada */}
+      <section className="intro-section">
+        <div className="container">
+          <h2>Sobre a DanPainéis</h2>
           <p>
-            Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa.
-            Nossa empresa está no mercado há mais de vinte e três anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
-            <br />
-            <br />
-            Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.
+            Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa. Nossa empresa está no mercado há mais de vinte e três anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+<br></br>
+Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* 3. SEÇÃO "PRODUTOS EM DESTAQUE" (Dentro do mesmo container) */}
-        <section className="featured-products-section">
-          <h2>Produtos em Destaque</h2>
+      {/* SEÇÃO DESTAQUES - Centralizada */}
+      <section className="featured-products">
+        <div className="container">
+          <div className="section-header">
+            <h2>Nossos Produtos</h2>
+            <Link to="/produtos" className="view-all-link">Ver todos &rarr;</Link>
+            <p>    </p>
+          </div>
 
-          {isLoading && <p>Carregando produtos...</p>}
-          {error && <p style={{ color: 'red' }}>{error}</p>}
+          <div className="products-grid">
+            {featuredProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {!isLoading && !error && (
-            <div className="products-grid">
-              {featuredProducts.map(product => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          )}
-        </section>
-      </div>
-    </>
+      {/* SEÇÃO CTA (Chamada) - Fundo colorido total, texto centralizado */}
+      <section className="cta-section">
+        <div className="container">
+          <h2>Precisa de um projeto personalizado?</h2>
+          <p>Nossa equipe de engenharia está pronta para desenvolver a solução ideal para você.</p>
+          <Link to="/contato" className="cta-button">Fale Conosco</Link>
+        </div>
+      </section>
+
+    </div>
   );
 }
 

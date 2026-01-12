@@ -6,7 +6,7 @@
   grid-template-columns: 2.5fr 1fr; /* Coluna principal 70%, Sidebar 30% */
   gap: 2.5rem;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 /* --- Breadcrumbs (Home / Produtos / ...) --- */

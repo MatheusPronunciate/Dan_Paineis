@@ -3,19 +3,19 @@
 /* --- 1. Seção Hero (Estilo "Axial") --- */
 .hero-section {
   /* Usa a variável de fundo do Navbar */
-  background-color: var(--cor-fundo-navbar); 
+  background-color: var(--cor-fundo-navbar);
   color: var(--cor-texto-navbar); /* Texto branco */
-  
+
   /* Ajuste de espaçamento */
   padding: 5rem 0;
-  
+
   /* Garante que o .container dentro dele funcione */
   display: flex;
   align-items: center;
 }
 
 .hero-content {
-  /* O .container já centraliza. 
+  /* O .container já centraliza.
      Vamos apenas estilizar o texto. */
   max-width: 600px; /* Limita a largura do texto */
 }
@@ -50,11 +50,11 @@
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  
+
   /* Estilo do botão "Axial" */
   background-color: var(--cor-highlight); /* Fundo Dourado */
   color: var(--cor-fundo-navbar);        /* Texto Azul Escuro */
-  
+
   padding: 1rem 2rem;
   border: none;
   border-radius: 4px; /* O site "Axial" usa botões mais quadrados */
@@ -100,3 +100,76 @@
 }
 
 /* (O .products-grid já está no index.css, então não precisamos repetir) */
+
+/* src/pages/Home.css */
+
+/* --- BOTÃO DO BANNER HERO (Ver Produtos) --- */
+.cta-button {
+  display: inline-block; /* Permite dar tamanho e margem */
+
+  /* ESPAÇAMENTO EXTRA EM CIMA PEDIDO */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  padding: 1rem 2.5rem; /* Botão mais gordinho */
+  background-color: var(--cor-highlight, #f1c40f); /* Amarelo/Dourado */
+  color: #000; /* Texto preto para contraste */
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px); /* Sobe um pouquinho */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  background-color: #ffdb4d; /* Amarelo mais claro */
+}
+
+
+/* --- BOTÃO "VER TODOS" (Seção de Produtos) --- */
+/* Antes era apenas um link azul, agora será um botão */
+
+.view-all-link {
+  display: inline-block;
+
+  /* Se estiver ao lado do título (desktop), margin-left ajuda.
+     Se estiver embaixo (mobile), margin-top ajuda. */
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+
+  padding: 0.6rem 1.5rem;
+  background-color: transparent; /* Fundo transparente */
+  border: 2px solid var(--cor-primaria, #003366); /* Borda Azul */
+  color: var(--cor-primaria, #003366);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+  background-color: var(--cor-primaria, #003366);
+  color: #fff; /* Vira branco no hover */
+}
+
+/* Ajuste para telas pequenas (Mobile) */
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: flex-start;
+  }
+
+  .view-all-link {
+    margin-left: 0;
+    margin-top: 1rem; /* Espaçamento extra no mobile */
+    width: 100%; /* Botão largura total no celular fica melhor */
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+}

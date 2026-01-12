@@ -6,8 +6,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
-  
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,20 +25,20 @@
 
   /* NOVA VARIÁVEL (Branco no modo claro) */
   --cor-fundo-card: #ffffff;
-  
+
   /* --cor-fundo-navbar: #ffffff; */
 
   /* CORES DA MARCA (LARANJA) */
-  --cor-primaria: #f7941d;
-  --cor-primaria-hover: #e68a1a;
+  --cor-primaria: #1dc4f7;
+  --cor-primaria-hover: #1a83e6;
   --cor-primaria-texto: #333333;
 
   /* NOVAS CORES (DO AXIAL) */
   --cor-fundo-navbar: #001f3f;    /* Azul Escuro */
   --cor-texto-navbar: #ffffff;     /* Branco */
-  --cor-highlight: #ffc631;       /* Amarelo/Dourado */
+  --cor-highlight: #00aeff;       /* Amarelo/Dourado */
 }
-  
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -74,7 +74,7 @@ p {
 
 body {
   width: 100%;
-  padding: 0; 
+  padding: 0;
   margin: 0;
   height: 100%;
   display: flex;
@@ -123,15 +123,20 @@ button:focus-visible {
   gap: 2rem; /* Espaçamento entre os cards */
 }
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+
+
+.container {
+  max-width: 1200px; /* Largura máxima do site */
+  margin: 0 auto;    /* A MÁGICA: 0 em cima/baixo, AUTO nas laterais (centraliza) */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   width: 100%;
 }
 
-
-.main-container {
-  flex-grow: 1;
-  padding-bottom: 5rem;
+/* Garante que imagens antigas não estourem a tela */
+.description-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
 }
