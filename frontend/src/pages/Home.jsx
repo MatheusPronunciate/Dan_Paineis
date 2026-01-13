@@ -5,6 +5,20 @@ import ProductCard from '../components/ProductCard';
 import './Home.css';
 import productsData from '../data/products.json';
 
+function calculateYearsSince(startDate) {
+  const start = new Date(startDate);
+  const now = new Date();
+
+  let years = now.getFullYear() - start.getFullYear();
+  const months = now.getMonth() - start.getMonth();
+
+  if (months < 0 || (months === 0 && now.getDate() < start.getDate())) {
+    years--;
+  }
+
+  return years;
+}
+
 function Home() {
   const featuredProducts = productsData.slice(0, 3);
 
@@ -27,7 +41,7 @@ function Home() {
         <div className="container">
           <h2>Sobre a DanPainéis</h2>
           <p>
-            Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa. Nossa empresa está no mercado há mais de vinte e três anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
+            Seja bem-vindo ao site da DanPainéis. Conheça um pouco mais sobre nossos produtos, localização e história da empresa. Nossa empresa está no mercado há mais de {calculateYearsSince('2002-09-13')} anos, atuando com qualidade, atendimento e prazo de entrega diferenciado.
 <br></br>
 Nossos produtos são montados com componentes de qualidade e de marcas reconhecidas no mercado. Nossos produtos possuem barramentos pintados e contatos elétricos prateados. Os circuitos de comando são devidamente anilhados, obedecendo rigorosamente às normas nacionais e internacionais (NBR, DIN, ANSI E NEMA), bem como a norma de segurança NR-10.
           </p>

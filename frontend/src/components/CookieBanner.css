@@ -1,0 +1,66 @@
+/* src/components/CookieBanner.css */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor-fundo-card); /* Adapta ao Dark Mode */
+  border-top: 1px solid var(--cor-borda);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  z-index: 9999; /* Fica acima de tudo */
+  animation: slideUp 0.5s ease-out;
+}
+
+.cookie-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+.cookie-btn {
+  background-color: var(--cor-primaria);
+  color: #fff; /* Texto do botão sempre branco para contraste com azul */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap; /* Impede que o texto do botão quebre */
+  transition: opacity 0.2s;
+  font-family: 'Archivo', sans-serif;
+}
+
+.cookie-btn:hover {
+  opacity: 0.9;
+}
+
+/* Animação de entrada */
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cookie-btn {
+    width: 100%;
+  }
+}

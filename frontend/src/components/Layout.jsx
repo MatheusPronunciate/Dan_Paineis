@@ -1,26 +1,29 @@
 // src/components/Layout.jsx
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar'; 
+import Navbar from './Navbar';
 import Footer from './Footer';
+import CookieBanner from './CookieBanner';
 
 function Layout() {
   return (
     <div>
-      <Navbar /> 
-      
+      <Navbar />
+
       {/* DE:
         <main style={{ minHeight: '80vh', padding: '20px' }}>
       */}
-      
-      {/* PARA: 
+
+      {/* PARA:
         Damos a ele uma classe que cuidará do centramento.
       */}
       <main className="main-container">
-        <Outlet /> 
+        <Outlet />
       </main>
-      
+
       <Footer />
+
+      <CookieBanner />
     </div>
   );
 }
