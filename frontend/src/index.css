@@ -17,26 +17,22 @@
 }
 
 :root {
+  /* --- MODO CLARO (Padrão) --- */
   --cor-fundo: #ffffff;
-  --cor-texto: #333333;
-  --cor-borda: #e0e0e0;
-  --cor-texto-card: #ffffff;
-
-
-  /* NOVA VARIÁVEL (Branco no modo claro) */
   --cor-fundo-card: #ffffff;
+  --cor-fundo-secundario: #f9f9f9; /* Para tabelas e fundos alternados */
 
-  /* --cor-fundo-navbar: #ffffff; */
+  --cor-texto: #333333;
+  --cor-texto-card: #333333;
+  --cor-borda: #e0e0e0;
 
-  /* CORES DA MARCA (LARANJA) */
+  /* Cores da Marca */
   --cor-primaria: #1dc4f7;
   --cor-primaria-hover: #1a83e6;
-  --cor-primaria-texto: #333333;
+  --cor-highlight: #00aeff;
 
-  /* NOVAS CORES (DO AXIAL) */
-  --cor-fundo-navbar: #001f3f;    /* Azul Escuro */
-  --cor-texto-navbar: #ffffff;     /* Branco */
-  --cor-highlight: #00aeff;       /* Amarelo/Dourado */
+  --cor-fundo-navbar: #001f3f;
+  --cor-texto-navbar: #ffffff;
 }
 
 

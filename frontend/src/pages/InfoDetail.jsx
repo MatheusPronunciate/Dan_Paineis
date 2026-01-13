@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import InfoSidebar from '../components/InfoSidebar';
-import './ProductDetail.css';
+import './ProductDetail.css'; // O CSS é compartilhado
 import infosData from '../data/infos.json';
 
 function InfoDetail() {
@@ -38,13 +38,12 @@ function InfoDetail() {
             </div>
           )}
 
+          {/* MUDANÇA AQUI: Usamos a mesma classe 'product-description-text' do Produto */}
           <div
-            className="description-section"
-            style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--cor-texto)' }}
+            className="product-description-text"
             dangerouslySetInnerHTML={{ __html: info.content }}
           />
 
-          {/* O componente <RegionsTabs /> foi removido daqui */}
         </main>
         <InfoSidebar />
       </div>

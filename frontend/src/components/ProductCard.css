@@ -1,12 +1,14 @@
 /* src/components/ProductCard.css */
 
 .product-card {
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
+  /* MUDANÇA: Usa a variável que troca de cor */
+  background-color: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+
   border-radius: 8px;
-  overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+  overflow: hidden;
   transition: all 0.3s ease;
-  height: 100%; /* Ocupa altura total da grid */
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +41,7 @@
 .card-image-container img {
   width: 100%;
   height: 100%;
+  background-color: var(--cor-fundo-secundario); /* Adapta o fundo */
   object-fit: cover; /* Mágica: Corta a imagem para preencher o espaço sem esticar */
   object-position: center;
   transition: transform 0.5s ease;
@@ -51,7 +54,7 @@
 /* --- Informações do Card --- */
 .card-info {
   padding: 1.5rem;
-  flex-grow: 1; /* Empurra o conteúdo para preencher espaço */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,7 +65,10 @@
   font-size: 1.2rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: var(--cor-texto, #333);
+
+  /* MUDANÇA: Cor do texto dinâmica */
+  color: var(--cor-texto-card);
+
   font-weight: 700;
   line-height: 1.4;
 }

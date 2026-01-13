@@ -126,16 +126,11 @@
   color: var(--cor-primaria); /* Destaca negritos */
 }
 
-/* --- Tabela (Pequenos ajustes) --- */
-.description-section {
-  background-color: #f9f9f9; /* Fundo leve para separar visualmente */
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid var(--cor-borda);
-}
+
 
 .description-title {
   margin-top: 0;
+  color: var(--cor-texto);
   border-bottom: 2px solid var(--cor-highlight);
   display: inline-block;
   padding-bottom: 0.5rem;
@@ -143,10 +138,14 @@
 
 .description-table td {
   padding: 1rem; /* Mais respiro na tabela */
+  color: var(--cor-texto); /* Texto da tabela */
+  border-bottom: 1px solid var(--cor-borda); /* Linhas da tabela */
 }
 
+/* Efeito Zebrado nas linhas (alternar cor) */
 .description-table tr:nth-child(even) {
-  background-color: rgba(0,0,0,0.02); /* Efeito zebrado sutil nas linhas */
+  /* Usa uma cor muito sutil (preto com 5% opacidade) que funciona em ambos os modos */
+  background-color: rgba(128, 128, 128, 0.05);
 }
 
 /* ... (Mantenha o resto da responsividade) */
@@ -173,4 +172,127 @@
   .product-title {
     font-size: 2rem;
   }
+}
+
+/* src/pages/ProductDetail.css */
+
+/* ... (Mantenha o topo do arquivo igual: grid, breadcrumbs, gallery, etc) ... */
+
+
+/* --- CONTEÚDO INJETADO (HTML vindo do JSON) --- */
+/* Essa classe agora é usada tanto em ProductDetail quanto em InfoDetail */
+
+/* src/pages/ProductDetail.css */
+
+/* ... Mantenha o topo do arquivo igual ... */
+
+/* --- CONTEÚDO INJETADO (HTML vindo do JSON) --- */
+
+.product-description-text {
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: justify;
+  /* Define a cor base do container */
+  color: var(--cor-texto) !important;
+}
+
+/* AQUI ESTÁ A MÁGICA: O seletor '*' pega TODOS os elementos dentro do texto
+   (p, div, span, li, strong, etc) e força a cor do tema.
+*/
+.product-description-text * {
+  color: var(--cor-texto) !important;
+  background-color: transparent !important; /* Remove fundos brancos trazidos do site antigo */
+}
+
+/* Títulos dentro do texto */
+.product-description-text h2,
+.product-description-text h3,
+.product-description-text h4 {
+  font-family: 'Archivo', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: block;
+  /* A cor já é herdada do '*' acima, mas reforçamos se precisar */
+}
+
+/* Negrito (Correção anterior de quebra de linha + Cor) */
+.product-description-text strong,
+.product-description-text b {
+  font-weight: 700;
+  display: inline;
+  margin: 0;
+}
+
+/* Links (Exceção: Devem ser da cor primária/destaque) */
+.product-description-text a {
+  color: var(--cor-primaria) !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Listas */
+.product-description-text ul,
+.product-description-text ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-description-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* ... Mantenha o resto (tabelas, responsividade) ... */
+
+
+/* --- SEÇÃO DA TABELA (Especificações) --- */
+.description-section {
+  /* Fundo cinza claro no Light, cinza escuro no Dark */
+  border: 1px solid var(--cor-borda);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.description-title {
+  margin-top: 0;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  border-bottom: 2px solid var(--cor-highlight);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.description-table td {
+  padding: 1rem;
+  vertical-align: top;
+  color: var(--cor-texto); /* Texto da tabela obedece ao tema */
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.description-table tr:last-child td {
+  border-bottom: none;
+}
+
+.description-table .spec-property {
+  font-weight: 700;
+  width: 30%;
+}
+
+.description-table .spec-value {
+  width: 70%;
+}
+
+/* Zebrado sutil que funciona em Dark e Light */
+.description-table tr:nth-child(even) {
+  background-color: rgba(127, 127, 127, 0.05);
 }
